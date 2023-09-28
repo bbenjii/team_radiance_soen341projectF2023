@@ -1,0 +1,18 @@
+Minute Meeting #2
+Date: September 26, 2023
+
+Topic: 
+- Discussed the remaining tasks to do for sprint 1
+- Brainstormed questions to ask the TA or Professor for clarifications
+    - What should the Sprint1 user stories really be about? 
+    - What to include in the Sprint 2 plan wiki, given that we don’t yet have access to information on Sprint 2?
+    - Can 2 members have the same role?
+- Assigned team members the remaining tasks we must complete
+- Further developed the README file, added more details to:
+    - Descriptions of the project
+    - Team members and roles
+    - Project approach and technologies
+- Explored github functionalities we were unsure about, such as wiki pages
+- Added subfolders for each Sprint to the github
+
+Time spent: 	Start: 2:00PM		End: 4:00PM		2h

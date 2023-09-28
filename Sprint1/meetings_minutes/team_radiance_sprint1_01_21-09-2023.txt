@@ -1,0 +1,15 @@
+Minute Meeting #1
+Date: September 21, 2023
+
+Topic: 
+- ReadMe file
+- Languages and frameworks we will consider using:
+    - HTML, CSS, Javascript,  Java, python, C++
+    - NodeJS, MySQL, ExpressJS
+- Role assignment
+    - Database: Benjamin Ollomo
+    - Front-end: Steven Lam
+    - Backend: Ceyhun Topcu
+    - Fullstack: Daniel François, Alexander El Ghaoui 
+
+Time spent: 	Start: 4:15PM		End: 6:00PM		1hr45m

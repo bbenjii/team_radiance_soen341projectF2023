@@ -1,0 +1,12 @@
+Minute Meeting #3
+Date: September 28, 2023
+
+Topic: 
+- Restructured our user stories
+- Added/removed scenarios from our user stories to avoid repetition of tasks as well as to cover all the specs that will be implemented in the future sprints
+- Started filling the excel sheet to show each members contribution to the project in the current sprint
+- Finished working on the README.md file
+- Started planning the next sprint
+
+Time spent: 	Start: 4:15PM		End: 6:00PM		1h45min
+
