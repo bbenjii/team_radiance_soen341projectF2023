@@ -1,5 +1,5 @@
     |------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |   TEAM MEMBERS         |         DATE          |              Type of activity / Desrciption              |        Time Spent      |       Total Time      |
+    |      TEAM MEMBERS      |         DATE          |             Type of activity / Desrciption               |        Time Spent      |       Total Time      |
     |------------------------|-----------------------|----------------------------------------------------------|------------------------|-----------------------|                
     | Alexander El Ghaoui    |       21/09/2023      | Git Repository/ Roles assigning/ Task breakdown          |        2 hours         |       4 hours         |
     |                        |       28/09/2023      | User stories and scenarios                               |        2 hours         |                       |
