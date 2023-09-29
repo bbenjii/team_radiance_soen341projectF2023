@@ -1,1 +1,98 @@
 
+# User Story 1
+STORY 1:
+
+# Title
+Search for properties
+
+# Narrative 
+As a prospective homeowner, I want to use a real estate website to search for and locate my ideal home so that I may confidently decide which property best suits my needs and preferences.
+
+# Acceptance Criteria
+Scenario: Initial Property Search
+    - Given I am on the homepage of the real estate website
+    - When I enter my desired home location, budget, and other basic criteria into the website’s search bar
+    - Then the website should allow me to view a list of properties matching my criteria, including their basic details (e.g., price, number of bedrooms, and square footage).
+
+# Task Breakdown
+- Create the search interface with input fields for location and price range.
+- Implement the backend logic to filter properties based on user input.
+- Develop the frontend to display the filtered properties.
+- Set up the project environment by creating a new branch for this user story in the version control system
+- Equip the development environment with relevant tools and libraries.
+- Design an easily accessible search bar using HTML and CSS
+
+
+# User Story 2
+STORY 2
+
+# Title
+Requests for visits to properties
+
+# Narrative
+As a potential homebuyer, I want to request a visit to a property I’m interested in so that I can view it in person and evaluate its suitability.
+
+# Acceptance Criteria
+Scenario: Requesting a property visit
+    - Given that I am logged in and viewing a property listing,
+    - When I click the “Request Visit” button and provide my availability,  
+    - Then the system should notify the broker of my request, and I should receive a confirmation
+
+# Task Breakdown
+- Create a button or link on property listings for requesting visits
+- Design and implement the form for users to enter their availability
+- Develop the logic to record visit requests in the database
+- Implement notifications to alert brokers about visit requests
+- Create a chat inbox for brokers and buyers to communicate
+
+
+# User Story 3
+STORY 3
+
+# Title
+CRUD Operations on properties 
+
+# Narrative
+As a broker, I want to be able to add, update, and delete properties that are in the database, so that I can keep the properties that I manage updated in the system.
+
+# Acceptance Criterias
+Scenario: Editing property details
+    - Given that I am logged in as a broker and performing property management actions (adding new property, editing property information, removing an existing property),
+    - When I make the respective changes and save,
+    - Then the system should accurately update the properties’ database to reflect the change I made
+ 
+# Task Breakdown
+- Create a “My Properties” button for brokers
+- Develop an interface for brokers to view their property listing
+- Add buttons to:
+- Add new properties
+- Delete current properties
+- Edit current properties
+- Create forms for editing various property attributes
+- Create forms for adding a new property
+- Implement backend logic for the add property, edit property and delete property functions
+
+
+# User Story 4
+STORY 4
+
+# Title
+CRUD Operations on brokers
+
+# Narrative
+As a system administrator, I want to add a new broker profile to the system, including their contact information and credentials, so that they can start managing property listings.
+
+# Acceptance Criteria
+Scenario: Adding a new broker profile
+    - Given that I am logged in as a system administrator,
+    - When I fill out the broker’s profile information and save it,
+    - Then the new broker profile should be created and accessible in the system
+
+# Task Breakdown
+- Create an interface for system administrators to add new broker profiles
+- Develop forms to collect broker profile information
+- Implement backend validation for broker profile data
+- Add logic to create new broker profiles in the database
+
+
+
