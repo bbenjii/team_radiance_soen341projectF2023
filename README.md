@@ -37,9 +37,10 @@ Front-end:
 
     
 Back-end:
-- NodeJS: Works quite fast thanks to advanced client-server interaction processes, asynchronous requests processing, and no-blocking I/O, increasing user satisfaction.
-- ExpressJS: Is known for its simplicity, speed, and extensive ecosystem of third-party libraries, making it a popular choice for building lightweight, fast, and customizable backend applications.
-- MySQL: Is a secure and easy-to-use database that is preffered for e-commerce websites.
+- NodeJS: It works quite fast due to the advanced client-server interaction processes, asynchronous requests processing, and no-blocking I/O, increasing user satisfaction. NodeJS should be employed for its scalability, performance, and real-time functionalities, which enables efficient handling of user requests and easy integration of databases and APIs. Also, it shares a codebase with Javascript and has a strong developer community ensuring ongoing support.
+- ExpressJS: It is known for its simplicity, speed, and extensive ecosystem of third-party libraries, making it a popular choice for building lightweight, fast, and customizable backend applications. This technology is valuable for this project because it is very efficient in building RESTful APIs and web applications. Its robust middleware support and streamlined design simplify tasks, such as handling, authenticating and request processing, rendering it an excellent choice for building a scalable web application.
+- MySQL: It is a secure and easy-to-use database that is preffered for e-commerce websites. Also, this database technology is versatile and offers versatility in terms of managing a database. Its ability to retrieve, handle data collected, and scalability guarantees reliable support for a feature-rich platform.
+- SQL: For this project, we decided to work with MySQL, instead of SQL. In fact, MySQL offers a set of comprehensive features, optimal data management features, and scalability. Also, MySQL offers compatibility with an extensive array of frameworks and languages, which makes it more suitable as a dependable database solution for this project.
 
 
 Version Control:
