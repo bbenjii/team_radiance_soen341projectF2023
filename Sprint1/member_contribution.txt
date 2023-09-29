@@ -1,18 +1,18 @@
     |------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |      TEAM MEMBERS      |         DATE          |             Type of activity / Desrciption               |        Time Spent      |       Total Time      |
+    |      TEAM MEMBERS      |         DATE          |             Type of activity / Description               |        Time Spent      |       Total Time      |
     |------------------------|-----------------------|----------------------------------------------------------|------------------------|-----------------------|                
-    | Alexander El Ghaoui    |       21/09/2023      | Git Repository/ Roles assigning/ Task breakdown          |        2 hours         |       4 hours         |
-    |                        |       28/09/2023      | User stories and scenarios                               |        2 hours         |                       |
+    | Alexander El Ghaoui    |       21/09/2023      | Git repository/Roles assigning/Task breakdown            |        2 hours         |       4 hours         |
+    |                        |       28/09/2023      | User story #1 and scenarios/Meeting minutes file #1      |        2 hours         |                       |
     |------------------------|-----------------------|----------------------------------------------------------|------------------------|-----------------------|    
-    | Daniel Francois        |       21/09/2023      | Git Repository/ Roles assigning/ Task breakdown          |        2 hours         |       4 hours         |
-    |                        |       28/09/2023      | User stories and scenarios                               |        2 hours         |                       |
+    | Daniel Francois        |       21/09/2023      | Project description/ Front-end technology                |        2 hours         |       4 hours         |
+    |                        |       28/09/2023      | User story #2 and scenarios/Task breakdown               |        2 hours         |                       |
     |------------------------|-----------------------|----------------------------------------------------------|------------------------|-----------------------| 
-    | Steven Lam             |       21/09/2023      | Git Repository/ Roles assigning/ Task breakdown          |        2 hours         |       4 hours         |
-    |                        |       28/09/2023      | User stories and scenarios                               |        2 hours         |                       |
+    | Steven Lam             |       21/09/2023      | Git repository/ Roles description/ Back-end technology   |        2 hours         |       4 hours         |
+    |                        |       28/09/2023      | Member's contribution file/Meeting minutes file #2       |        2 hours         |                       |
     |------------------------|-----------------------|----------------------------------------------------------|------------------------|-----------------------|
-    | Benjamin Ollomo        |       21/09/2023      | Git Repository/ Roles assigning/ Task breakdown          |        2 hours         |       4 hours         |
-    |                        |       28/09/2023      | User stories and scenarios                               |        2 hours         |                       |
+    | Benjamin Ollomo        |       21/09/2023      | Project approach/Version control technology              |        2 hours         |       4 hours         |
+    |                        |       28/09/2023      | User story #3 and scenarios/Plan for next sprint         |        2 hours         |                       |
     |------------------------|-----------------------|----------------------------------------------------------|------------------------|-----------------------|
-    | Ceyhun Topcu           |       21/09/2023      | Git Repository/ Roles assigning/ Task breakdown          |        2 hours         |       4 hours         |
-    |                        |       28/09/2023      | User stories and scenarios                               |        2 hours         |                       |
+    | Ceyhun Topcu           |       21/09/2023      | Roles assigning/Roles description                        |        2 hours         |       4 hours         |
+    |                        |       28/09/2023      | User story #4 and scenarios/Meeting minutes file #3      |        2 hours         |                       |
     |------------------------------------------------------------------------------------------------------------------------------------------------------------|
