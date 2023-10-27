@@ -40,21 +40,26 @@
 
     <!-- home section starts -->
     <section class="home" id="home">
-
+        
         <form action="">
             <h3>Find the perfect home</h3>
+            <!-- asking the user for an address -->
             <label for="">Address</label>
             <input type="text" name="search-address">
             <br>
+            <!-- asking the user for an country -->
             <label for="">Country</label>
             <input type="text" name="search-country">
             <br>
+            <!-- asking the user for an city -->
             <label for="">City</label>
             <input type="text" name="search-city">
             <br>
+            <!-- asking the user for an listing price -->
             <label for="">Listing Price</label>
             <input type="number" name="search-listing-price">
             <br>
+            <!-- asking the user for the amount of bedrooms -->
             <label for="">Bedrooms</label>
             <select name="bedrooms" id="search-bedrooms"> 
                 <option value="" disabled hidden selected>select</option>
@@ -65,18 +70,30 @@
                 <option value="5">5 bedrooms</option>
             </select>
             <br>
+            <!-- asking the user for the amount of bathrooms -->
             <label for="">bathrooms</label>
-            <input type="text" name="search-bathrooms">
+            <select name="bedrooms" id="search-bedrooms"> 
+                <option value="" disabled hidden selected>select</option>
+                <option value="1">1 bathroom</option>
+                <option value="2">2 bathrooms</option>
+                <option value="3">3 bathrooms</option>
+                <option value="4">4 bathrooms</option>
+                <option value="5">5 bathrooms</option>
+            </select>
             <br>
+            <!-- asking the user for the type of property he wants -->
             <label for="">Property Type</label>
             <input type="text" name="search-property-type">
             <br>
+            <!-- asking the user for the a description of the property -->
             <label for="">Description</label>
             <input type="text" name="search-description">
             <br>
+            <!-- asking the user for the status of the house he wants -->
             <label for="">Status</label>
             <input type="text" name="search-status">
             <br>
+            <!-- Submit button for user to send all the info -->
             <input type="submit" value="search property" class="btn" id="submit-search">
         </form>
 
