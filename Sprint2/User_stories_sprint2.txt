@@ -1,0 +1,71 @@
+
+# User Story 1
+STORY 1:
+
+#Title
+Search for brokers
+
+# Narrative: 
+As a client looking for a real estate broker, I want to use the real estate app to search for and find a suitable broker who can help me buy or sell a property.
+
+#  Acceptance Criteria
+Scenario: Initial Broker Search
+    - Given I am on the homepage of the real estate app
+    - When I enter my desired broker criteria (e.g., location, specialty, or experience) into the app's search bar
+    - Then the app should allow me to view a list of brokers matching my criteria, including their basic details (e.g., name, contact information, and expertise).
+
+# Task Breakdown:
+- Create the search interface with input fields for broker location, specialty, or experience.
+- Implement the backend logic to filter brokers based on user input.
+- Develop the frontend to display the filtered brokers.
+- Set up the project environment by creating a new branch for this user story in the version control system.
+- Equip the development environment with relevant tools and libraries.
+- Design an easily accessible search bar for brokers using HTML and CSS.
+
+
+# User Story 2
+STORY 2
+
+# Title
+Submit an offer to buy a property
+
+# Narrative
+As a potential homebuyer, I want to submit an offer to buy a property I'm interested in, so that I can formally express my intention to purchase the property.
+
+# Acceptance Criteria
+    - Scenario: Submitting an offer
+    - Given that I am logged in and viewing a property listing,
+    - When I click the "Submit Offer" button and provide the offer details (e.g., price, financing terms, and any special conditions),
+    - Then the system should record my offer and notify the seller or broker, and I should receive a confirmation of my submitted offer.
+
+# Task Breakdown
+- Create a "Submit Offer" button on property listings.
+- Design and implement a form for users to enter their offer details.
+- Develop the logic to record submitted offers in the database.
+- Implement notifications to alert sellers or brokers about the received offers.
+- Create a communication channel for negotiating offers, if necessary.
+
+# User Story 3
+STORY 3
+
+# Title
+Offers Management (View, Accept, Reject)
+
+# Narrative
+As a broker or seller, I want to be able to manage the offers I receive for a property, so that I can review, accept, or reject offers and proceed with property sales.
+
+# Acceptance Criteria
+Scenario: Managing Offers
+    - Given that I am logged in as a broker or seller and viewing a property listing with offers,
+    - When I access the offers management section for the property,
+    - Then the system should allow me to:
+        View a list of received offers with their details.
+        Accept or reject offers, updating the status accordingly.
+        Communicate with buyers regarding offers, if needed.
+
+# Task Breakdown
+- Create an "Offers Management" section for brokers and sellers on property listings.
+- Develop an interface to view and manage received offers.
+- Implement actions to accept or reject offers and update their status.
+- Provide a messaging or communication feature to facilitate negotiations with buyers.
+- Ensure that changes in offer status are reflected in the system and communicated to relevant parties.

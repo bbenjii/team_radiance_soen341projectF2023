@@ -1,0 +1,11 @@
+Minute Meeting #1
+Date: October 7, 2023
+
+Topic: 
+Divide Tasks to team members:
+Ben and Ceyhun will work on the database and back-end of the project using mySQL, Node, JavaScript
+Steven and Alexander will work on the front-end of the project using JavaScript, HTML and CSS 
+Daniel will work with both subteams as Full stack developer and also develop the acceptance stories
+
+
+Time spent: 	Start: 4:15PM		End: 6:00PM		1hr45m

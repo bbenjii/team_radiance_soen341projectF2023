@@ -1,0 +1,7 @@
+Minute Meeting #2
+Date: October 19, 2023
+
+Topic: 
+Quick update on the every team members task
+Discussed what we could fix for and implement for the future
+ Conducted a quick session of pair programming where 2 to 3 members worked together on the same code

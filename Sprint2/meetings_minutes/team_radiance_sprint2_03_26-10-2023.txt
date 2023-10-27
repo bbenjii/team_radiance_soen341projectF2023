@@ -1,0 +1,10 @@
+Minute Meeting #3
+Date: October 26, 2023
+
+Topic: 
+Discussed the remaining tasks to do for sprint 2 while planning for the next sprint
+Elaborated the user stories for the features of sprint 3.
+Assigned team members the remaining tasks we must complete
+Implemented acceptance tests in GitHub
+
+Time spent: 	Start: 4:15PM		End: 6:00PM		1hr45m
