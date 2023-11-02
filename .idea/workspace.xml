@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="" />
+    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Trial website">
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/website/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/brokerBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerBoard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/brokerBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/css/searchProperty.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/searchProperty.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/css/systemAdminBoard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/systemAdminBoard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/searchProperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/searchProperty.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/systemAdminBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/systemAdminBoard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/systemAdminBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/systemAdminBoard.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +58,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Node.js.app.js">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sprint2/website" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/node_modules" />
+      <recent name="$PROJECT_DIR$/Sprint2" />
+      <recent name="$PROJECT_DIR$/Sprint2/website" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.server.js">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team_radiance_soen341projectF2023/Sprint2/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -59,8 +82,12 @@
     <configuration name="dbHelper.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Sprint2/backend/dbHelper.js" working-dir="$PROJECT_DIR$/Sprint2/backend">
       <method v="2" />
     </configuration>
+    <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/backend/server.js" working-dir="$PROJECT_DIR$/backend">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.server.js" />
         <item itemvalue="Node.js.app.js" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Node.js.dbHelper.js" />
@@ -78,11 +105,23 @@
       <updated>1698440134562</updated>
       <workItem from="1698440137334" duration="7604000" />
       <workItem from="1698453508765" duration="1586000" />
-      <workItem from="1698957471490" duration="1011000" />
+      <workItem from="1698957471490" duration="2290000" />
     </task>
+    <task id="LOCAL-00001" summary="Trial website">
+      <created>1698958569289</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698958569289</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Trial website" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trial website" />
   </component>
 </project>
