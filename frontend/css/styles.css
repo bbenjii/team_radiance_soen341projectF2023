@@ -36,6 +36,12 @@ section
     padding: 2rem 9%;
 }
 
+label{
+    font-weight: 500;
+    font-size: large;
+}
+
+
 .btn
 {
     margin-top: 1rem;
