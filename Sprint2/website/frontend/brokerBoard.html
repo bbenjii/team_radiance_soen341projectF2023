@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<header>
+  <a href="#" class="logo"><span>Radiance</span>Estate</a>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="searchProperty.html">Search</a>
+    <a href="systemAdminBoard.html">System Admin Board</a>
+    <a href="brokerBoard.html">Broker Board</a>
+    <a href="#agents">Our Agents</a>
+    <a href="#contact">Contact Us</a>
+    <a href="form.html">Forms</a>
+
+  </nav>
+
+  <div class="icons">
+    <div id="menu-bars" class="fas fa-bars"></div>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-user"></a>
+  </div>
+
+</header>
+<!-- header section ends -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Brokers and Properties</title>
+  <link rel="stylesheet" href="css/systemAdminBoard.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2 class="admin-title">Broker's Board</h2>
+
+
+  <h2>Listed Properties</h2>
+  <ul id="propertyList"></ul>
+
+
+  <!-- Edit Property Form (hidden by default) -->
+  <div id="editPropertyForm" style="display: none;">
+    <h3>Edit Property</h3>
+    <input type="hidden" id="editPropertyId">
+    <label>Address: <input type="text" id="editPropertyAddress"></label>
+    <label>Country: <input type="text" id="editPropertyCountry"></label>
+    <label>City: <input type="text" id="editPropertyCity"></label>
+    <label>Listing Price: <input type="number" id="editPropertyListingPrice"></label>
+
+
+
+    <label>Bedrooms:
+      <select id="editPropertyBedrooms" name="Bedrooms">
+        <option value="" disabled hidden selected>number of bedrooms</option>
+        <option value="1">1 bedroom</option>
+        <option value="2">2 bedrooms</option>
+        <option value="3">3 bedrooms</option>
+        <option value="4">4 bedrooms</option>
+        <option value="5">5 bedrooms</option>
+      </select>
+
+    </label>
+
+    <label>Bathrooms:
+      <select id="editPropertyBathrooms" name="Bathrooms">
+        <option value="" disabled hidden selected>number of bedrooms</option>
+        <option value="1">1 bathroom</option>
+        <option value="2">2 bathrooms</option>
+        <option value="3">3 bathrooms</option>
+        <option value="4">4 bathrooms</option>
+        <option value="5">5 bathrooms</option>
+      </select>
+
+    </label>
+
+    <label>Description: <input type="text" id="editPropertyDescription"></label>
+    <label>Property Type: <input type="text" id="editPropertyType"></label>
+    <label>Status: <input type="text" id="editPropertyStatus"></label>
+
+    <button onclick="submitEditForm()">Submit Changes</button>
+    <button onclick="closeEditForm()">Cancel</button>
+  </div>
+
+
+
+  <button id="showPropertyFormBtn">Add Property</button>
+
+  <div id="propertyFormContainer" style="display: none;">
+    <h3>Add New Property</h3>
+    <form id="propertyForm">
+      <input type="text" id="Address" placeholder="Address" required>
+      <input type="text" id="Country" placeholder="Country" required>
+      <input type="text" id="City" placeholder="City" required>
+      <input type="number" id="ListingPrice" placeholder="Listing Price" required>  <br> <br>
+      <select id="Bedrooms" name="Bedrooms">
+        <option value="" disabled hidden selected>number of bedrooms</option>
+        <option value="1">1 bedroom</option>
+        <option value="2">2 bedrooms</option>
+        <option value="3">3 bedrooms</option>
+        <option value="4">4 bedrooms</option>
+        <option value="5">5 bedrooms</option>
+      </select> <br>  <br>
+
+      <select id="Bathrooms" name="Bathrooms" required>
+        <option value="" disabled hidden selected>number of bathrooms</option>
+        <option value=""></option>
+        <option value="1">1 bathroom</option>
+        <option value="2">2 bathrooms</option>
+        <option value="3">3 bathrooms</option>
+        <option value="4">4 bathrooms</option>
+        <option value="5">5 bathrooms</option>
+      </select>  <br> <br>
+
+      <input type="text" id="Description" placeholder="Description" required>
+      <input type="text" id="PropertyType" placeholder="PropertyType" required>
+      <input type="text" id="Status" placeholder="Status" required>
+
+      <button type="submit">Submit</button>
+      <button type="button" id="cancelPropertyFormBtn">Cancel</button>
+    </form>
+  </div>
+
+
+
+
+</div>
+
+
+
+
+<!-- footer section starts -->
+<section class="footer">
+  <div class="footer-container">
+    <div class="box-container">
+      <div class="box">
+        <h3>Branch Location</h3>
+        <a href="#">Canada</a>
+        <a href="#">Haiti</a>
+        <a href="#">Gabon</a>
+        <a href="#">China</a>
+        <a href="#">Lebanon</a>
+        <a href="#">Turkye</a>
+      </div>
+
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Featured</a>
+        <a href="#">Agents</a>
+        <a href="#">Contacts</a>
+      </div>
+
+      <div class="box">
+        <h3>More Links</h3>
+        <a href="#">My Account</a>
+        <a href="#">My Favorite</a>
+        <a href="#">My List</a>
+      </div>
+
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+
+      </div>
+    </div>
+    <div>
+      <div class="credit">created by <span>Team Radiance</span> | all rights reserved</div>
+    </div>
+  </div>
+</section>
+<!-- footer section ends -->
+
+
+<script src="brokerBoard.js">
+
+  let menu = document.querySelector('#menu-bars');
+  let navbar = document.querySelector('.navbar');
+
+  menu.onclick = () => {
+    navbar.classList.toggle('active');
+    menu.classList.toggle('fa-times');
+  }
+
+  window.onscroll = () => {
+    navbar.classList.remove('active');
+    navbar.classList.remove('fa-times');
+  }
+
+</script>
+</body>
+
+</html>

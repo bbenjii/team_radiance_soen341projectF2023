@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<header>
+  <a href="#" class="logo"><span>Radiance</span>Estate</a>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="searchProperty.html">Search</a>
+    <a href="systemAdminBoard.html">System Admin Board</a>
+    <a href="brokerBoard.html">Broker Board</a>
+    <a href="#agents">Our Agents</a>
+    <a href="#contact">Contact Us</a>
+    <a href="form.html">Forms</a>
+
+  </nav>
+
+  <div class="icons">
+    <div id="menu-bars" class="fas fa-bars"></div>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-user"></a>
+  </div>
+
+</header>
+<!-- header section ends -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Brokers and Properties</title>
+  <link rel="stylesheet" href="css/systemAdminBoard.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2 class="admin-title">System Admin Board</h2>
+
+  <h2>Registered Brokers</h2>
+  <ul id="brokerList"></ul>
+
+  <!-- Edit Broker Form (hidden by default) -->
+  <div id="editBrokerForm" style="display: none;">
+    <h3>Edit Broker</h3>
+    <input type="hidden" id="editBrokerId">
+    <label>First Name: <input type="text" id="editBrokerFirstName"></label><br>
+    <label>Last Name: <input type="text" id="editBrokerLastName"></label><br>
+    <label>Email: <input type="text" id="editBrokerEmail"></label><br>
+    <label>Phone Number: <input type="text" id="editBrokerPhoneNumber"></label><br>
+    <button onclick="submitEditForm()">Submit Changes</button>
+    <button onclick="closeEditForm()">Cancel</button>
+  </div>
+
+
+  <button id="showBrokerFormBtn">Add Broker</button>
+
+  <div id="brokerFormContainer" style="display: none;">
+    <h3>Add New Broker</h3>
+    <form id="brokerForm">
+      <input type="text" id="brokerFirstName" placeholder="First Name" required>
+      <input type="text" id="brokerLastName" placeholder="Last Name" required>
+      <input type="email" id="brokerEmail" placeholder="Email" required>
+      <input type="text" id="brokerPhoneNumber" placeholder="Phone Number" required>
+      <button type="submit">Submit</button>
+      <button type="button" id="cancelBrokerFormBtn">Cancel</button>
+    </form>
+  </div>
+
+
+
+  <h2>Listed Properties</h2>
+  <ul id="propertyList"></ul>
+</div>
+
+
+<!-- footer section starts -->
+<section class="footer">
+  <div class="footer-container">
+    <div class="box-container">
+      <div class="box">
+        <h3>Branch Location</h3>
+        <a href="#">Canada</a>
+        <a href="#">Haiti</a>
+        <a href="#">Gabon</a>
+        <a href="#">China</a>
+        <a href="#">Lebanon</a>
+        <a href="#">Turkye</a>
+      </div>
+
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Featured</a>
+        <a href="#">Agents</a>
+        <a href="#">Contacts</a>
+      </div>
+
+      <div class="box">
+        <h3>More Links</h3>
+        <a href="#">My Account</a>
+        <a href="#">My Favorite</a>
+        <a href="#">My List</a>
+      </div>
+
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+
+      </div>
+    </div>
+    <div>
+      <div class="credit">created by <span>Team Radiance</span> | all rights reserved</div>
+    </div>
+  </div>
+</section>
+<!-- footer section ends -->
+
+
+<script src="systemAdminBoard.js">
+
+  let menu = document.querySelector('#menu-bars');
+  let navbar = document.querySelector('.navbar');
+
+  menu.onclick = () => {
+    navbar.classList.toggle('active');
+    menu.classList.toggle('fa-times');
+  }
+
+  window.onscroll = () => {
+    navbar.classList.remove('active');
+    navbar.classList.remove('fa-times');
+  }
+
+</script>
+</body>
+
+</html>

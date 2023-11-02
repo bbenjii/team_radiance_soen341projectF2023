@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Search</title>
+  <link rel="stylesheet" href="css/searchProperty.css">
+</head>
+
+
+<header>
+  <a href="#" class="logo"><span>Radiance</span>Estate</a>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="searchProperty.html">Search</a>
+    <a href="systemAdminBoard.html">System Admin Board</a>
+    <a href="brokerBoard.html">Broker Board</a>
+    <a href="#agents">Our Agents</a>
+    <a href="#contact">Contact Us</a>
+    <a href="form.html">Forms</a>
+
+  </nav>
+
+  <div class="icons">
+    <div id="menu-bars" class="fas fa-bars"></div>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-user"></a>
+  </div>
+
+</header>
+<!-- header section ends -->
+
+
+<body>
+
+<div class="container">
+  <form id="searchForm">
+    <h3>Search Property</h3>
+
+    Address: <input type="text" id="Address" name="Address"><br>
+    Country: <input type="text" id="Country" name="Country"><br>
+    City: <input type="text" id="City" name="City"><br>
+    Listing Price: <input type="number" id="ListingPrice" name="ListingPrice"><br>
+
+    <!-- asking the user for the amount of bedrooms -->
+    Bedrooms: <select id="Bedrooms" name="Bedrooms">
+    <option value="" disabled hidden selected>select</option>
+    <option value=""></option>
+    <option value="1">1 bedroom</option>
+    <option value="2">2 bedrooms</option>
+    <option value="3">3 bedrooms</option>
+    <option value="4">4 bedrooms</option>
+    <option value="5">5 bedrooms</option>
+  </select>
+    <br>
+
+    <!-- asking the user for the amount of bathrooms -->
+
+    Bathrooms: <select id="Bathrooms" name="Bathrooms"> <option value="" disabled hidden selected>select</option>
+    <option value="1">1 bathroom</option>
+    <option value="2">2 bathrooms</option>
+    <option value="3">3 bathrooms</option>
+    <option value="4">4 bathrooms</option>
+    <option value="5">5 bathrooms</option>
+  </select>
+    <br>
+
+    Description: <input type="text" id="Description" name="Description"><br>
+    Property Type: <input type="text" id="PropertyType" name="PropertyType"><br>
+    Status: <input type="text" id="Status" name="Status"><br>
+    <button type="submit">Search</button>
+  </form>
+
+  <h2>Properties</h2>
+
+  <!-- Results will be populated here -->
+    <ul id="propertyList"></ul>
+
+
+  </div>
+
+
+
+<!-- footer section starts -->
+<section class="footer">
+  <div class="footer-container">
+    <div class="box-container">
+      <div class="box">
+        <h3>Branch Location</h3>
+        <a href="#">Canada</a>
+        <a href="#">Haiti</a>
+        <a href="#">Gabon</a>
+        <a href="#">China</a>
+        <a href="#">Lebanon</a>
+        <a href="#">Turkye</a>
+      </div>
+
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Featured</a>
+        <a href="#">Agents</a>
+        <a href="#">Contacts</a>
+      </div>
+
+      <div class="box">
+        <h3>More Links</h3>
+        <a href="#">My Account</a>
+        <a href="#">My Favorite</a>
+        <a href="#">My List</a>
+      </div>
+
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+
+      </div>
+    </div>
+    <div>
+      <div class="credit">created by <span>Team Radiance</span> | all rights reserved</div>
+    </div>
+  </div>
+</section>
+<!-- footer section ends -->
+
+
+<script src="searchProperty.js"></script>
+</body>
+
+</html>

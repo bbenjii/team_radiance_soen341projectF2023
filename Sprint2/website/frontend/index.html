@@ -1,0 +1,632 @@
+<!-- 28:54 minute -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <!-- Font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+<!-- header section starts -->
+<header>
+  <a href="#" class="logo"><span>Radiance</span>Estate</a>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="searchProperty.html">Search</a>
+    <a href="systemAdminBoard.html">System Admin Board</a>
+    <a href="brokerBoard.html">Broker Board</a>
+    <a href="#agents">Our Agents</a>
+    <a href="#contact">Contact Us</a>
+    <a href="form.html">Forms</a>
+
+  </nav>
+
+  <div class="icons">
+    <div id="menu-bars" class="fas fa-bars"></div>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-user"></a>
+  </div>
+
+</header>
+<!-- header section ends -->
+
+
+<!-- home section starts -->
+<section class="home" id="home">
+
+  <form action="/submit-search" method="POST">
+    <h3>Find the perfect home</h3>
+
+    <!-- asking the user for an address -->
+    <label for="">Address</label>
+    <input type="text" name="search-address">
+    <br>
+    <!-- asking the user for an country -->
+    <label for="">Country</label>
+    <input type="text" name="search-country">
+    <br>
+    <!-- asking the user for an city -->
+    <label for="">City</label>
+    <input type="text" name="search-city">
+    <br>
+
+
+    <!-- asking the user for an listing price -->
+    <label for="">Listing Price</label>
+    <input type="number" name="search-listing-price">
+    <br>
+    <!-- asking the user for the amount of bedrooms -->
+    <label for="">Bedrooms</label>
+    <select name="bedrooms" id="search-bedrooms">
+      <option value="" disabled hidden selected>select</option>
+      <option value="1">1 bedroom</option>
+      <option value="2">2 bedrooms</option>
+      <option value="3">3 bedrooms</option>
+      <option value="4">4 bedrooms</option>
+      <option value="5">5 bedrooms</option>
+    </select>
+    <br>
+    <!-- asking the user for the amount of bathrooms -->
+    <label for="">bathrooms</label>
+    <select name="bathrooms" id="search-bathrooms">
+      <option value="" disabled hidden selected>select</option>
+      <option value="1">1 bathroom</option>
+      <option value="2">2 bathrooms</option>
+      <option value="3">3 bathrooms</option>
+      <option value="4">4 bathrooms</option>
+      <option value="5">5 bathrooms</option>
+    </select>
+    <br>
+    <!-- asking the user for the type of property he wants -->
+    <label for="">Property Type</label>
+    <input type="text" name="search-property-type">
+    <br>
+    <!-- asking the user for the a description of the property -->
+    <label for="">Description</label>
+    <input type="text" name="search-description">
+    <br>
+    <!-- asking the user for the status of the house he wants -->
+    <label for="">Status</label>
+    <input type="text" name="search-status">
+    <br>
+    <!-- Submit button for user to send all the info -->
+    <input type="submit" value="search property" class="btn" id="submit-search">
+  </form>
+
+
+  <!-- <div class="buttons-container">
+      <a href="#" class="btn">for rent</a>
+      <a href="#" class="btn">for sell</a>
+  </div>
+
+  <div class="input-box">
+      <input type="search" name="" placeholder="neighborhood" id="">
+      <input type="search" name="" placeholder="city" id="">
+      <select name="" id="">
+          <option value="" disabled hidden selected>minimum price</option>
+          <option value="5000$">5000$</option>
+          <option value="10 000$">10 000$</option>
+          <option value="15 000$">15 000$</option>
+          <option value="20 000$">20 000$</option>
+          <option value="25 000$">25 000$</option>
+      </select>
+      <select name="" id="">
+          <option value="" disabled hidden selected>maximum price</option>
+          <option value="30 000$">30 000$</option>
+          <option value="35 000$">35 000$</option>
+          <option value="40 000$">40 000$</option>
+          <option value="45 000$">45 000$</option>
+          <option value="50 000$">50 000$</option>
+      </select>
+      <select name="" id="">
+          <option value="" disabled hidden selected>property status</option>
+          <option value="ready to move">Ready To Move</option>
+          <option value="under construction">Under Construction</option>
+          <option value="furnished">Furnished</option>
+          <option value="semi-fursnished">Semi-furnished</option>
+          <option value="unfurnished">Unfurnished</option>
+      </select>
+      <select name="" id="">
+          <option value="" disabled hidden selected>property type</option>
+          <option value="flat">Flat</option>
+          <option value="house">House</option>
+          <option value="shop">Furnished</option>
+          <option value="warehouse">Warehouse</option>
+          <option value="land">Land</option>
+      </select>
+      <select name="" id="">
+          <option value="" disabled hidden selected>aminities</option>
+          <option value="parking space">Parking Space</option>
+          <option value="swimming pool">Swimming Pool</option>
+          <option value="playground">Playground</option>
+          <option value="security">Security</option>
+          <option value="all">All</option>
+      </select>
+      <select name="" id="">
+          <option value="" disabled hidden selected>bedrooms</option>
+          <option value="1 bedroom">1 bedroom</option>
+          <option value="2 bedrooms">2 bedrooms</option>
+          <option value="3 bedrooms">3 bedrooms</option>
+          <option value="4 bedrooms">4 bedrooms</option>
+          <option value="5 bedrooms">5 bedrooms</option>
+      </select>
+      <select name="" id="">
+          <option value="" disabled hidden selected>bathrooms</option>
+          <option value="1 bathroom">1 bathroom</option>
+          <option value="2 bathrooms">2 bathrooms</option>
+          <option value="3 bathrooms">3 bathrooms</option>
+          <option value="4 bathrooms">4 bathrooms</option>
+          <option value="5 bathrooms">5 bathrooms</option>
+      </select>
+  </div> -->
+
+</section>
+<!-- home section ends -->
+
+
+<!-- services section stars -->
+<section class="services" id="services">
+  <h1 class="heading"> our <span>services</span></h1>
+
+  <div class="box-container">
+    <div class="box">
+      <img src="https://www.iconpacks.net/icons/2/free-home-sale-icon-2497-thumb.png" alt="buying home icon">
+      <h3>buying home</h3>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+        here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem
+        Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+      <img src="https://cdn-icons-png.flaticon.com/512/602/602320.png" alt="renting home icon">
+      <h3>renting home</h3>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+        here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem
+        Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+      <img src="https://static.thenounproject.com/png/3107697-200.png" alt="selling home icon">
+      <h3>selling home</h3>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+        here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem
+        Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </div>
+</section>
+<!-- services section ends -->
+
+
+<!-- featured section starts -->
+<section class="featured" id="featured">
+
+  <h1 class="heading"><span>featured</span> properties</h1>
+
+  <div class="box-container">
+
+    <div class="box">
+      <div class="image-container">
+        <img src="https://media.architecturaldigest.com/photos/571e97c5741fcddb16b559c9/master/pass/modernist-decor-inspiration-01.jpg" alt="">
+        <div class="info">
+          <h3>3 days ago</h3>
+          <h3>for rent</h3>
+        </div>
+        <div class="icons">
+          <a href="#" class="fas fa-film">2</a>
+          <a href="#" class="fas fa-camera">10</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="price">
+          <h3>30 000$/month</h3>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-envelope"></a>
+          <a href="#" class="fas fa-phone"></a>
+        </div>
+        <div class="location">
+          <h3>modern apartments</h3>
+          <p>Montreal, Quebec</p>
+        </div>
+        <div class="details">
+          <h3> <i class="fas fa-expand"></i>3500 sqft</h3>
+          <h3> <i class="fas fa-bed"></i>3 bedrooms</h3>
+          <h3> <i class="fas fa-bath"></i>4 bathrooms</h3>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn">request info</a>
+          <a href="#" class="btn">view details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image-container">
+        <img src="https://media.architecturaldigest.com/photos/571e97c5741fcddb16b559c9/master/pass/modernist-decor-inspiration-01.jpg" alt="">
+        <div class="info">
+          <h3>3 days ago</h3>
+          <h3>for rent</h3>
+        </div>
+        <div class="icons">
+          <a href="#" class="fas fa-film">2</a>
+          <a href="#" class="fas fa-camera">10</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="price">
+          <h3>30 000$/month</h3>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-envelope"></a>
+          <a href="#" class="fas fa-phone"></a>
+        </div>
+        <div class="location">
+          <h3>modern apartments</h3>
+          <p>Montreal, Quebec</p>
+        </div>
+        <div class="details">
+          <h3> <i class="fas fa-expand"></i>3500 sqft</h3>
+          <h3> <i class="fas fa-bed"></i>3 bedrooms</h3>
+          <h3> <i class="fas fa-bath"></i>4 bathrooms</h3>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn">request info</a>
+          <a href="#" class="btn">view details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image-container">
+        <img src="https://media.architecturaldigest.com/photos/571e97c5741fcddb16b559c9/master/pass/modernist-decor-inspiration-01.jpg" alt="">
+        <div class="info">
+          <h3>3 days ago</h3>
+          <h3>for rent</h3>
+        </div>
+        <div class="icons">
+          <a href="#" class="fas fa-film">2</a>
+          <a href="#" class="fas fa-camera">10</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="price">
+          <h3>30 000$/month</h3>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-envelope"></a>
+          <a href="#" class="fas fa-phone"></a>
+        </div>
+        <div class="location">
+          <h3>modern apartments</h3>
+          <p>Montreal, Quebec</p>
+        </div>
+        <div class="details">
+          <h3> <i class="fas fa-expand"></i>3500 sqft</h3>
+          <h3> <i class="fas fa-bed"></i>3 bedrooms</h3>
+          <h3> <i class="fas fa-bath"></i>4 bathrooms</h3>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn">request info</a>
+          <a href="#" class="btn">view details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image-container">
+        <img src="https://media.architecturaldigest.com/photos/571e97c5741fcddb16b559c9/master/pass/modernist-decor-inspiration-01.jpg" alt="">
+        <div class="info">
+          <h3>3 days ago</h3>
+          <h3>for rent</h3>
+        </div>
+        <div class="icons">
+          <a href="#" class="fas fa-film">2</a>
+          <a href="#" class="fas fa-camera">10</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="price">
+          <h3>30 000$/month</h3>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-envelope"></a>
+          <a href="#" class="fas fa-phone"></a>
+        </div>
+        <div class="location">
+          <h3>modern apartments</h3>
+          <p>Montreal, Quebec</p>
+        </div>
+        <div class="details">
+          <h3> <i class="fas fa-expand"></i>3500 sqft</h3>
+          <h3> <i class="fas fa-bed"></i>3 bedrooms</h3>
+          <h3> <i class="fas fa-bath"></i>4 bathrooms</h3>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn">request info</a>
+          <a href="#" class="btn">view details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image-container">
+        <img src="https://media.architecturaldigest.com/photos/571e97c5741fcddb16b559c9/master/pass/modernist-decor-inspiration-01.jpg" alt="">
+        <div class="info">
+          <h3>3 days ago</h3>
+          <h3>for rent</h3>
+        </div>
+        <div class="icons">
+          <a href="#" class="fas fa-film">2</a>
+          <a href="#" class="fas fa-camera">10</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="price">
+          <h3>30 000$/month</h3>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-envelope"></a>
+          <a href="#" class="fas fa-phone"></a>
+        </div>
+        <div class="location">
+          <h3>modern apartments</h3>
+          <p>Montreal, Quebec</p>
+        </div>
+        <div class="details">
+          <h3> <i class="fas fa-expand"></i>3500 sqft</h3>
+          <h3> <i class="fas fa-bed"></i>3 bedrooms</h3>
+          <h3> <i class="fas fa-bath"></i>4 bathrooms</h3>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn">request info</a>
+          <a href="#" class="btn">view details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image-container">
+        <img src="https://media.architecturaldigest.com/photos/571e97c5741fcddb16b559c9/master/pass/modernist-decor-inspiration-01.jpg" alt="">
+        <div class="info">
+          <h3>3 days ago</h3>
+          <h3>for rent</h3>
+        </div>
+        <div class="icons">
+          <a href="#" class="fas fa-film">2</a>
+          <a href="#" class="fas fa-camera">10</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="price">
+          <h3>30 000$/month</h3>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-envelope"></a>
+          <a href="#" class="fas fa-phone"></a>
+        </div>
+        <div class="location">
+          <h3>modern apartments</h3>
+          <p>Montreal, Quebec</p>
+        </div>
+        <div class="details">
+          <h3> <i class="fas fa-expand"></i>3500 sqft</h3>
+          <h3> <i class="fas fa-bed"></i>3 bedrooms</h3>
+          <h3> <i class="fas fa-bath"></i>4 bathrooms</h3>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn">request info</a>
+          <a href="#" class="btn">view details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- featured section ends -->
+
+
+
+<!-- agent section starts -->
+<section class="agents" id="agents">
+  <h1 class="heading">professional <span>agents</span> </h1>
+
+  <div class="box-container">
+
+    <div class="box">
+      <a href="#" class="fas fa-envelope"></a>
+      <a href="#" class="fas fa-phone"></a>
+      <img src="https://ea2.s3.amazonaws.com/pz/t/ISqhekz93yjxln1000000000.jpg" alt="">
+      <h3>Frank Truman</h3>
+      <span>agent</span>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-envelope"></a>
+      <a href="#" class="fas fa-phone"></a>
+      <img src="https://ea2.s3.amazonaws.com/pz/t/ISqhekz93yjxln1000000000.jpg" alt="">
+      <h3>Frank Truman</h3>
+      <span>agent</span>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-envelope"></a>
+      <a href="#" class="fas fa-phone"></a>
+      <img src="https://ea2.s3.amazonaws.com/pz/t/ISqhekz93yjxln1000000000.jpg" alt="">
+      <h3>Frank Truman</h3>
+      <span>agent</span>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-envelope"></a>
+      <a href="#" class="fas fa-phone"></a>
+      <img src="https://ea2.s3.amazonaws.com/pz/t/ISqhekz93yjxln1000000000.jpg" alt="">
+      <h3>Frank Truman</h3>
+      <span>agent</span>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<!-- agent section ends -->
+
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  <h1 class="heading"><span>contact</span> us </h1>
+  <div class="icons-container">
+    <div class="icons">
+      <a href="#" class="fas fa-phone"></a>
+      <h3>Phone Number</h3>
+      <p>514-892-6702</p>
+    </div>
+
+    <div class="icons">
+      <a href="#" class="fas fa-envelope"></a>
+      <h3>Email Address</h3>
+      <p>teamradiance@gmail.com</p>
+    </div>
+
+    <div class="icons">
+      <a href="#" class="fas fa-building"></a>
+      <h3>Office Address</h3>
+      <p>7681 Robert-Bourasse, H7U 9K4</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <form action="">
+      <div class="input-box">
+        <input type="text" placeholder="name">
+        <input type="number" placeholder="number">
+      </div>
+      <div class="input-box">
+        <input type="email" placeholder="email">
+        <input type="text" placeholder="subject">
+        <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+      </div>
+      <input type="submit" value="send" class="btn">
+    </form>
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178709.7913101554!2d-73.7259060631897!3d45.583699595047484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a6a636dd639%3A0x9e85cac6415827f0!2sUniversit%C3%A9%20Concordia!5e0!3m2!1sfr!2sca!4v1698418940879!5m2!1sfr!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+  </div>
+
+
+</section>
+<!-- contact section ends -->
+
+
+
+
+
+
+<!-- footer section starts -->
+<section class="footer">
+  <div class="footer-container">
+    <div class="box-container">
+      <div class="box">
+        <h3>Branch Location</h3>
+        <a href="#">Canada</a>
+        <a href="#">Haiti</a>
+        <a href="#">Gabon</a>
+        <a href="#">China</a>
+        <a href="#">Lebanon</a>
+        <a href="#">Turkye</a>
+      </div>
+
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Featured</a>
+        <a href="#">Agents</a>
+        <a href="#">Contacts</a>
+      </div>
+
+      <div class="box">
+        <h3>More Links</h3>
+        <a href="#">My Account</a>
+        <a href="#">My Favorite</a>
+        <a href="#">My List</a>
+      </div>
+
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+
+      </div>
+    </div>
+    <div>
+      <div class="credit">created by <span>Team Radiance</span> | all rights reserved</div>
+    </div>
+  </div>
+</section>
+<!-- footer section ends -->
+
+
+
+
+
+<!-- JAVASCRIPT PART -->
+<script>
+  let menu = document.querySelector('#menu-bars');
+  let navbar = document.querySelector('.navbar');
+
+  menu.onclick = () => {
+    navbar.classList.toggle('active');
+    menu.classList.toggle('fa-times');
+  }
+
+  window.onscroll = () => {
+    navbar.classList.remove('active');
+    navbar.classList.remove('fa-times');
+  }
+</script>
+
+
+
+</body>
+</html>
