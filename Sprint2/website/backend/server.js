@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 
 // Serve static files (HTML, CSS, etc.) from a "public" directory
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, '../../../frontend')));
 
 
 
