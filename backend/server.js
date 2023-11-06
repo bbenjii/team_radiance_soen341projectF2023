@@ -8,6 +8,7 @@ const path = require('path');
 
 const cors = require('cors');
 const mysql = require('mysql2');
+const nodemailer = require('nodemailer');
 
 const app = express();
 app.use(cors());
@@ -18,7 +19,14 @@ app.use(bodyParser.json());
 // Serve static files (HTML, CSS, etc.) from a "public" directory
 app.use(express.static(path.join(__dirname, '../frontend')));
 
-
+// Email configuration
+const transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: 'teamradiance341@gmail.com',
+      pass: 'soenradiance341',
+    },
+  });
 
 // Database connection
 const connection = mysql.createConnection({
@@ -59,6 +67,110 @@ app.get('/searchProperty', (req, res) => {
 
 });
 
+app.get('/searchBroker', (req, res) => {
+    const {
+        FirstName, LastName, Email, PhoneNumber
+    } = req.query;
+
+    // Construct SQL query based on provided parameters (with appropriate SQL injection protection)
+    let sqlQuery = "SELECT * FROM Brokers WHERE 1=1"; // The 1=1 is just a trick to start adding conditions
+    if (FirstName) sqlQuery += ` AND FirstName LIKE ${connection.escape(FirstName)}`;
+    if (LastName) sqlQuery += ` AND LastName LIKE ${connection.escape(LastName)}`;
+    if (Email) sqlQuery += ` AND Email LIKE ${connection.escape(Email)}`;
+    if (PhoneNumber) sqlQuery <= ` AND PhoneNumber LIKE ${connection.escape(PhoneNumber)}`;
+
+    console.log(sqlQuery);
+    connection.query(sqlQuery, (error, results) => {
+        if (error) throw error;
+        res.json(results);
+    });
+
+});
+
+app.get('/requestPropertyVisit', (req, res) => {
+    const {
+      Address, Country, City, ListingPrice, Bedrooms, Bathrooms, Description, PropertyType, Status
+    } = req.query;
+  
+    // Construct the email message
+    const emailSubject = 'Property Visit Request';
+    const emailBody = `
+      You have a request to visit the property with the following information:
+      
+      Address: ${Address}
+      Country: ${Country}
+      City: ${City}
+      Listing Price: ${ListingPrice}
+      Bedrooms: ${Bedrooms}
+      Bathrooms: ${Bathrooms}
+      Description: ${Description}
+      Property Type: ${PropertyType}
+      Status: ${Status}
+    `;
+  
+    // Email options
+    const mailOptions = {
+      from: 'teamradiance341@gmail.com',
+      to: 'topcuceyhun4107@gmail.com',
+      subject: emailSubject,
+      text: emailBody,
+    };
+  
+    // Send the email
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.log('Error sending email: ' + error);
+        res.status(500).send('Error sending email');
+      } else {
+        console.log('Email sent: ' + info.response);
+        res.status(200).send('Email sent successfully');
+      }
+    });
+});
+
+app.get('/sendOffer', (req, res) => {
+    const {
+      Address, Country, City, ListingPrice, Bedrooms, Bathrooms, Description, PropertyType, Status, OfferAmount
+    } = req.query;
+  
+    // Construct the email message with the offer amount
+    const emailSubject = 'Property Offer';
+    const emailBody = `
+      You have an offer for the property with the following information:
+      
+      Address: ${Address}
+      Country: ${Country}
+      City: ${City}
+      Listing Price: ${ListingPrice}
+      Bedrooms: ${Bedrooms}
+      Bathrooms: ${Bathrooms}
+      Description: ${Description}
+      Property Type: ${PropertyType}
+      Status: ${Status}
+      
+      Offer Amount: $${OfferAmount}
+    `;
+  
+    // Email options
+    const mailOptions = {
+      from: 'teamradiance341@gmail.com',
+      to: 'topcuceyhun4107@gmail.com',
+      subject: emailSubject,
+      text: emailBody,
+    };
+  
+    // Send the email
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.log('Error sending email: ' + error);
+        res.status(500).send('Error sending email');
+      } else {
+        console.log('Email sent: ' + info.response);
+        res.status(200).send('Email sent successfully');
+      }
+    });
+});
+  
 
 
 // Fetch all brokers
