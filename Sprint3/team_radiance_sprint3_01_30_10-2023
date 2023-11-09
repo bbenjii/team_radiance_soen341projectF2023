@@ -1,0 +1,18 @@
+Minute Meeting #1
+Date: October 30, 2023
+
+Topic: 
+We divided the task to be completed during the current sprint. Ceyhun and Benjamin are going to be working on the backend implementation of 
+the new features. Daniel is going to be developing the acceptance tests and link them to user stories. Steven is going to record all team meetings
+and keep working on the front end. Alexander is going to help with task related to the front-end of the website and keeping track of team member 
+contribution during this sprint.
+For this meeting, we collectively designed 2 acceptance test (AT), which are directly linked with specific user stories to make sure that 
+these user stories are successfully implemented. Moreover, we emphasized the integration of unit tests for the aditional classes and files 
+added during the current sprint. We also made sure these unit tests could be automatically executed for every push/pull request to the main 
+branch. This is going to ensure continuous integration pipeline within the repository.
+Finally, we also decided to implement an interactive neighborhood map, which is going to provide valuable information about local amenities, nearby schools
+and parks, and more. The integration of this map is essential because it offers potential buyers a comprehensive overview of the neighborhood. Also, it is going
+to enhance user experience by providing convenient access to crucial information that influences purchasing decisions.
+
+
+Time spent: 	Start: 6PM		End: 7:30PM		1hr30m
