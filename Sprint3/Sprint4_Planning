@@ -1,0 +1,12 @@
+For Sprint 3, we have implement the features for the users to be able to search for brokers on the platform (in the homebuyer profile)
+and users will also be able to submit promise to purchase (in the broker profile). All team members have contributed to the devlelopment
+of the website, either by developing the front-end or backend of the website. Benjamin and Ceyhun were responisble to develop 2 acceptance
+tests for the user stories identified in the last sprint, which were the feature to search for brokers, the feature to be able to submit an
+offer to buy a property and the feature to be able to manage offer made by customers. Daniel and Alexander developed unit test for all new
+classes and files that were added during the current Sprint. These unit test were used to ensure the continuous integration pipeline within
+the repository. Steven and Alexander were responsible to maintain and add front-end features to the website. Steven, Ceyhun and Alexander 
+collectively worked together to plan Sprint 4, record the meeting minutes #1 and record the meeting minutes As a team, we decided during our
+meeting that the new feature we were going to implement real-time updates for the user. Daniel and Steven were responsible of breaking down
+the features of mortgage calculator and integration of an interactive neighborhood map into tasks for next Sprint. Benjamin was responsible
+to keep track of all members contribution during the current Sprint. Finally, Benjamin and Ceyhun had the responsability to implement backend
+features needed for the website.
