@@ -184,3 +184,15 @@ app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
 
+app.get('/search-broker', (req, res) => {
+    const searchQuery = req.query.query;
+    dbHelper.searchBroker(searchQuery, (error, brokerData) => {
+        if (error) {
+            res.status(500).json({ error: 'Internal server error' });
+        } else if (brokerData) {
+            res.status(200).json({ broker: brokerData });
+        } else {
+            res.status(404).json({ message: 'Broker not found' });
+        }
+    });
+});
