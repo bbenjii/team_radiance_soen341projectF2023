@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var searchForm = document.getElementById('searchBrokerForm');
+    var searchForm = document.getElementById('searchBroker');
 
     searchForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from submitting via the browser
+        event.preventDefault(); 
 
         var brokerName = document.getElementById('brokerName').value;
         var brokerInfoDisplay = document.getElementById('brokerInfoDisplay');
         
-        // Clear previous results
+        
         brokerInfoDisplay.innerHTML = ''; 
 
         fetch('/search-broker?query=' + encodeURIComponent(brokerName))
             .then(response => response.json())
             .then(data => {
-                // Assuming the server responds with an array of brokers
+               
                 if (data.length > 0) {
                     data.forEach(broker => {
                         var brokerDiv = document.createElement('div');
