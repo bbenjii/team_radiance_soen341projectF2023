@@ -1,0 +1,73 @@
+User Story 1: Calculate Mortgage Payments
+ 
+As a homebuyer, I want to be able to compute monthly mortgage payments based on the loan amount, interest rate, as well as loan term.
+ 
+Tasks for User Story 1:
+ 
+Frontend Development:
+- Create a user interface for entering loan amount, interest rate, and loan term.
+- Validate user input to ensure the data entered is valid.
+- Display the computed monthly mortgage payment.
+
+Backend Development:
+- Create an API endpoint to handle mortgage calculations.
+- Implement the mortgage calculation logic based on the user's input.
+- Unit test the mortgage calculation logic.
+
+Testing:
+- Perform user testing to ensure the calculator works as expected.
+- Test edge cases, such as invalid input values.
+- Fix any bugs or issues that arise during testing.
+
+Documentation:
+- Update the user documentation to include instructions on how to use the mortgage calculator.
+ 
+ 
+ 
+ 
+User Story 2: Save Mortgage Details
+ 
+As a homebuyer, I want to be able to save the mortgage details for future reference.
+ 
+Tasks for User Story 2:
+
+Frontend Development:
+- Add a "Save" button to the mortgage calculator interface.
+- Implement the functionality to save mortgage details to the user's profile.
+- Backend Development:
+- Create an API endpoint for saving mortgage details.
+- Store the saved details in the database.
+
+Testing:
+- Test the save functionality to ensure data is stored correctly.
+- Verify that saved details are accessible from the user's profile.
+
+Documentation:
+- Update the user documentation to include information on how to save and access mortgage details.
+ 
+ 
+
+
+User Story 3: Implement Real-Time Updates
+ 
+As a user, I want to receive real-time updates (i.e. notifications) for important events within the application to enhance my overall productivity.
+ 
+Backend Development:
+- Develop a notification system to trigger events and send notifications in real-time.
+- Integrate the notification system with relevant application events.
+- Ensure secure and efficient handling of notifications.
+
+Frontend Development:
+- Create a user interface to display notifications to the user.
+- Implement real-time updates in the user interface.
+
+Testing:
+- Test the notification system for reliability and performance.
+- Conduct user testing to ensure notifications are delivered accurately and promptly.
+
+Documentation:
+- Update the user documentation to inform users about the new notification system.
+
+
+
+
