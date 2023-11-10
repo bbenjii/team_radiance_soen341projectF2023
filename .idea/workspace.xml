@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Trial website">
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/website/backend/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/brokerBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerBoard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/brokerBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerBoard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/css/searchProperty.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/searchProperty.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/css/systemAdminBoard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/systemAdminBoard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/searchProperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/searchProperty.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/systemAdminBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/systemAdminBoard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/website/frontend/systemAdminBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/systemAdminBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/brokerBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerBoard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/searchProperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/searchProperty.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/benjaminollomo/WebstormProjects/team_radiance_soen341projectF2023/Sprint2/website",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/benjaminollomo/WebstormProjects/team_radiance_soen341projectF2023/Sprint2/website&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Sprint2/website" />
@@ -105,7 +99,9 @@
       <updated>1698440134562</updated>
       <workItem from="1698440137334" duration="7604000" />
       <workItem from="1698453508765" duration="1586000" />
-      <workItem from="1698957471490" duration="2290000" />
+      <workItem from="1698957471490" duration="6168000" />
+      <workItem from="1699254382907" duration="624000" />
+      <workItem from="1699472282665" duration="12220000" />
     </task>
     <task id="LOCAL-00001" summary="Trial website">
       <created>1698958569289</created>
@@ -114,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698958569289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Trial website">
+      <created>1698959797610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698959797610</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Trial website">
+      <created>1698959894561</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698959894561</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
