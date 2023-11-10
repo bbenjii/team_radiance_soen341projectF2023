@@ -70,18 +70,19 @@ app.get('/searchBroker', (req, res) => {
     const {
         FirstName, LastName, Email, PhoneNumber
     } = req.query;
-
+    console.log(PhoneNumber);
     // Construct SQL query based on provided parameters (with appropriate SQL injection protection)
     let sqlQuery = "SELECT * FROM Brokers WHERE 1=1"; // The 1=1 is just a trick to start adding conditions
     if (FirstName) sqlQuery += ` AND FirstName LIKE ${connection.escape(FirstName)}`;
     if (LastName) sqlQuery += ` AND LastName LIKE ${connection.escape(LastName)}`;
     if (Email) sqlQuery += ` AND Email LIKE ${connection.escape(Email)}`;
-    if (PhoneNumber) sqlQuery <= ` AND PhoneNumber LIKE ${connection.escape(PhoneNumber)}`;
+    if (PhoneNumber) sqlQuery += ` AND PhoneNumber LIKE ${connection.escape(PhoneNumber)}`;
 
     console.log(sqlQuery);
     connection.query(sqlQuery, (error, results) => {
         if (error) throw error;
         res.json(results);
+
     });
 
 });
