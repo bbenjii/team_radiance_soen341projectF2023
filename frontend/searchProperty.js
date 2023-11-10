@@ -1,3 +1,46 @@
+
+function requestPropertyVisit(property) {
+    // Construct the query parameters
+    const queryParams = new URLSearchParams(property).toString();
+    fetch(`http://localhost:3306/requestPropertyVisit?${queryParams}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Problem with request');
+            }
+            return response.text();
+        })
+        .then(result => {
+            alert('Email sent successfully!');
+        })
+        .catch(error => {
+            console.error('Error sending email:', error);
+            alert('Error sending email. Please try again.');
+        });
+}
+
+function sendOffer(property) {
+    const offerAmount = prompt("Please enter your offer amount (in CAD):");
+    if (offerAmount) {
+        // Construct the query parameters, including the offer amount
+        const queryParams = new URLSearchParams({ ...property, OfferAmount: offerAmount }).toString();
+        fetch(`http://localhost:3306/sendOffer?${queryParams}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Problem with request');
+                }
+                return response.text();
+            })
+            .then(result => {
+                alert('Offer email sent successfully!');
+            })
+            .catch(error => {
+                console.error('Error sending offer email:', error);
+                alert('Error sending offer email. Please try again.');
+            });
+    }
+}
+
+
 document.getElementById('searchForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -40,12 +83,13 @@ document.getElementById('searchForm').addEventListener('submit', function(e) {
                     Bathrooms: ${property.Bathrooms} <br>
                     Description: ${property.Description} <br>
                     Type: ${property.PropertyType} <br>
-                    Status: ${property.Status} <br>
+                    Status: ${property.Status} <br>   
                     
-                   
-                </li>
+            <button onclick='requestPropertyVisit(${JSON.stringify(property)})'>Request Visit</button>
+            <button onclick='sendOffer(${JSON.stringify(property)})'>Send Offer</button>
+
+               </li>
             `).join('');
         })
-
 
 });

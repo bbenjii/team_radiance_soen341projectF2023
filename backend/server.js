@@ -21,10 +21,10 @@ app.use(express.static(path.join(__dirname, '../frontend')));
 
 // Email configuration
 const transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'gmail',
     auth: {
       user: 'teamradiance341@gmail.com',
-      pass: 'soenradiance341',
+      pass: 'qdhh owzc clqh ofhy',
     },
   });
 
@@ -59,7 +59,6 @@ app.get('/searchProperty', (req, res) => {
     if (PropertyType) sqlQuery += ` AND PropertyType LIKE ${connection.escape(PropertyType)}`;
     if (Status) sqlQuery += ` AND Status LIKE ${connection.escape(Status)}`;
 
-    console.log(sqlQuery);
     connection.query(sqlQuery, (error, results) => {
         if (error) throw error;
         res.json(results);
@@ -107,11 +106,15 @@ app.get('/requestPropertyVisit', (req, res) => {
       Property Type: ${PropertyType}
       Status: ${Status}
     `;
-  
+
+    var maillist = [
+        'benji.ollomo@gmail.com',
+        'topcuceyhun4107@gmail.com',
+    ];
     // Email options
     const mailOptions = {
       from: 'teamradiance341@gmail.com',
-      to: 'topcuceyhun4107@gmail.com',
+      to: maillist,
       subject: emailSubject,
       text: emailBody,
     };
@@ -150,11 +153,15 @@ app.get('/sendOffer', (req, res) => {
       
       Offer Amount: $${OfferAmount}
     `;
-  
+
+    var maillist = [
+        'benji.ollomo@gmail.com',
+        'topcuceyhun4107@gmail.com',
+    ];
     // Email options
     const mailOptions = {
       from: 'teamradiance341@gmail.com',
-      to: 'topcuceyhun4107@gmail.com',
+      to: maillist,
       subject: emailSubject,
       text: emailBody,
     };
