@@ -1,5 +1,4 @@
-//app.js
-
+//app with all backend functions
 
 const express = require('express');
 const bodyParser = require('body-parser');
