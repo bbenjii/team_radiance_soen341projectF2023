@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Setting up Unit Tests for SearchBrokers">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint3/User_Stories_sprint3" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3/User_Stories_sprint3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/searchBroker.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/searchBroker.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testSetup.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testSetup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +108,7 @@
       <workItem from="1698957471490" duration="6168000" />
       <workItem from="1699254382907" duration="624000" />
       <workItem from="1699472282665" duration="12220000" />
-      <workItem from="1699834412776" duration="14145000" />
+      <workItem from="1699834412776" duration="18744000" />
     </task>
     <task id="LOCAL-00001" summary="Trial website">
       <created>1698958569289</created>
@@ -182,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699918979109</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Setting up Unit Tests for SearchBrokers">
+      <created>1699919386791</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699919386791</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Setting up Unit Tests for SearchBrokers">
+      <created>1699919829142</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699919829142</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

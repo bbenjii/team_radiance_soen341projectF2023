@@ -1,14 +1,22 @@
 const request = require('supertest');
 const createApp = require('../backend/app'); // Adjust the path to where your Express app is defined
-const {connection, closeConnection, transporter} = require('./testSetup');
+const { createTestConnection, closeConnection, mockedTransport } = require('./testSetup');
 
-app = createApp(connection, transporter);
 
 describe('GET /searchBroker', () => {
 
-    afterAll(() => {
-        closeConnection(); // Close the test database connection
+    let app;
+    let connection;
+
+    beforeAll(async () => {
+        connection = await createTestConnection();
+        app = createApp(connection, mockedTransport);
     });
+
+    afterAll(async () => {
+        await closeConnection(connection);
+    });
+
 
     it('should return results for a valid single parameter search', async () => {
         const response = await request(app)

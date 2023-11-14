@@ -16,6 +16,11 @@ const connection = mysql.createConnection({
     database: "RealEstateDB"
 });
 
+connection.connect(error => {
+    if (error) throw error;
+    console.log('Database connected successfully.');
+});
+
 
 // Email configuration
 const transporter = nodemailer.createTransport({
@@ -26,10 +31,6 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-connection.connect(error => {
-    if (error) throw error;
-    console.log('Database connected successfully.');
-});
 
 
 const server = app(connection, transporter);

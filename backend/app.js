@@ -47,7 +47,6 @@ module.exports = (connection, transporter) => {
         const {
             FirstName, LastName, Email, PhoneNumber
         } = req.query;
-        console.log(PhoneNumber);
         // Construct SQL query based on provided parameters (with appropriate SQL injection protection)
         let sqlQuery = "SELECT * FROM Brokers WHERE 1=1"; // The 1=1 is just a trick to start adding conditions
         if (FirstName) sqlQuery += ` AND FirstName LIKE ${connection.escape(FirstName)}`;
@@ -55,7 +54,6 @@ module.exports = (connection, transporter) => {
         if (Email) sqlQuery += ` AND Email LIKE ${connection.escape(Email)}`;
         if (PhoneNumber) sqlQuery += ` AND PhoneNumber LIKE ${connection.escape(PhoneNumber)}`;
 
-        console.log(sqlQuery);
         connection.query(sqlQuery, (error, results) => {
             if (error) throw error;
             res.json(results);
@@ -87,7 +85,6 @@ module.exports = (connection, transporter) => {
 //Add new broker to database
     app.post('/addBroker', (req, res) => {
 
-        console.log("add new broker");
 
         const { FirstName, LastName, Email, PhoneNumber} = req.body;
 
@@ -106,7 +103,6 @@ module.exports = (connection, transporter) => {
 //Add new Property to database
     app.post('/addProperty', (req, res) => {
 
-        console.log("add new Property");
 
         const { Address, Country, City, ListingPrice, Bedrooms, Bathrooms, PropertyType, Description, Status} = req.body;
 
@@ -283,4 +279,3 @@ module.exports = (connection, transporter) => {
 
 
 
-// module.exports = app;  // Export the app
