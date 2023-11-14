@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Setting up Unit Tests for SearchBrokers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Setting up Unit Tests for sending visit requests vist and offer emails">
       <change beforePath="$PROJECT_DIR$/Sprint3/User_Stories_sprint3" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3/User_Stories_sprint3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/searchBroker.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/searchBroker.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testSetup.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testSetup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/benjaminollomo/WebstormProjects/team_radiance_soen341projectF2023",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/benjaminollomo/WebstormProjects/team_radiance_soen341projectF2023&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Sprint2/website" />
@@ -108,7 +103,7 @@
       <workItem from="1698957471490" duration="6168000" />
       <workItem from="1699254382907" duration="624000" />
       <workItem from="1699472282665" duration="12220000" />
-      <workItem from="1699834412776" duration="18744000" />
+      <workItem from="1699834412776" duration="18953000" />
     </task>
     <task id="LOCAL-00001" summary="Trial website">
       <created>1698958569289</created>
@@ -201,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699919829142</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Setting up Unit Tests for sending visit requests vist and offer emails">
+      <created>1699936227831</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699936227831</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +225,7 @@
     <MESSAGE value="linking the backend-server requestPropertyVisit and sendOffer functions to corresponding buttons on the front-end" />
     <MESSAGE value="connecting the SearchBroker page to the backend" />
     <MESSAGE value="Setting up Unit Tests for SearchBrokers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up Unit Tests for SearchBrokers" />
+    <MESSAGE value="Setting up Unit Tests for sending visit requests vist and offer emails" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setting up Unit Tests for sending visit requests vist and offer emails" />
   </component>
 </project>
