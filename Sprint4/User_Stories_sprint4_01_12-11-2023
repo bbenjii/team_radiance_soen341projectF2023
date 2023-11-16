@@ -1,0 +1,13 @@
+Minute Meeting #1
+Date: November 12, 2023
+
+Topic: 
+We divided the tasks to be completed during the current sprint. Steven and Daniel are going to be working on the backend implementation, Benjamin
+is going to update meeting minutes #1 and #2, while working on front-end development. Ceyhun is going to keep track of the contribution of each member
+as well as adding unit tests for new classes/files developed during the current sprint to ensure Continuous Integration pipeline of the repository.
+Alexander is going to write 2 acceptance tests for the user stories identified in sprint 3 and work on front-end features of the website. Collectively
+as a team, each memeber is going to refactor the entire code to find software bugs and fix them, using automatic tools (FindBugs, SonarQube, ...). As a
+team, we decided how the features of Offer Management(Broker profile) and Mortgage Calculator (Homebuyer profile) were going to be implemented. 
+
+
+Time spent: 	Start: 5PM		End: 6:30PM		1hr30m
