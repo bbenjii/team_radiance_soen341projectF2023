@@ -202,7 +202,7 @@ module.exports = (connection, transporter) => {
 
         var maillist = [
             'benji.ollomo@gmail.com',
-            'topcuceyhun4107@gmail.com',
+            'ceyhuntopcu4107@gmail.com',
         ];
         // Email options
         const mailOptions = {
@@ -249,7 +249,7 @@ module.exports = (connection, transporter) => {
 
         var maillist = [
             'benji.ollomo@gmail.com',
-            'topcuceyhun4107@gmail.com',
+            'ceyhuntopcu4107@gmail.com',
         ];
         // Email options
         const mailOptions = {
