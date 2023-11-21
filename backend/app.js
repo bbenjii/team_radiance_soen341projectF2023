@@ -47,8 +47,8 @@ module.exports = (connection, transporter) => {
         const {
             FirstName, LastName, Email, PhoneNumber
         } = req.query;
-        // Construct SQL query based on provided parameters (with appropriate SQL injection protection)
-        let sqlQuery = "SELECT * FROM Brokers WHERE 1=1"; // The 1=1 is just a trick to start adding conditions
+
+        let sqlQuery = "SELECT * FROM Brokers WHERE 1=1"; 
         if (FirstName) sqlQuery += ` AND FirstName LIKE ${connection.escape(FirstName)}`;
         if (LastName) sqlQuery += ` AND LastName LIKE ${connection.escape(LastName)}`;
         if (Email) sqlQuery += ` AND Email LIKE ${connection.escape(Email)}`;
@@ -88,7 +88,6 @@ module.exports = (connection, transporter) => {
 
         const { FirstName, LastName, Email, PhoneNumber} = req.body;
 
-        // Insert the new broker into the database
         const sql = 'INSERT INTO Brokers (FirstName, LastName, Email, PhoneNumber) VALUES (?, ?, ?, ?)';
         connection.query(sql, [FirstName, LastName, Email, PhoneNumber], (error, results) => {
             if (error) {
@@ -106,7 +105,6 @@ module.exports = (connection, transporter) => {
 
         const { Address, Country, City, ListingPrice, Bedrooms, Bathrooms, PropertyType, Description, Status} = req.body;
 
-        // Insert the new broker into the database
         const sql = 'INSERT INTO Properties (Address, Country, City, ListingPrice, Bedrooms, Bathrooms, PropertyType, Description, Status) VALUES (?, ?, ?, ?,?, ?, ?, ?, ?)';
         connection.query(sql, [Address, Country, City, ListingPrice, Bedrooms, Bathrooms, PropertyType, Description, Status], (error, results) => {
             if (error) {
@@ -125,7 +123,6 @@ module.exports = (connection, transporter) => {
     app.delete('/Brokers/:brokerID', (req, res) => {
         const brokerID = req.params.brokerID;
 
-        // SQL query to delete a broker
         const query = `DELETE FROM Brokers WHERE BrokerID = ?`;
 
         connection.query(query, [brokerID], (error, results) => {
@@ -146,7 +143,6 @@ module.exports = (connection, transporter) => {
     app.delete('/Properties/:propertyID', (req, res) => {
         const propertyID = req.params.propertyID;
 
-        // SQL query to delete a broker
         const query = `DELETE FROM Properties WHERE PropertyID = ?`;
 
         connection.query(query, [propertyID], (error, results) => {

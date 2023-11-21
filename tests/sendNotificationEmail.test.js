@@ -1,5 +1,5 @@
 const request = require('supertest');
-const createApp = require('../backend/app'); // Adjust the path to where your Express app is defined
+const createApp = require('../backend/app');
 const { createTestConnection, closeConnection, mockedTransport } = require('./testSetup');
 
 
@@ -38,9 +38,5 @@ describe('/requestPropertyVisit Endpoint', () => {
 
         // Assert that nodemailer's sendMail was called
         expect(mockedTransport.sendMail).toHaveBeenCalled();
-
-        // Optionally, you can add more assertions to check the contents of the email
     });
-
-    // Add more tests to cover different scenarios, such as email sending failure
 });
