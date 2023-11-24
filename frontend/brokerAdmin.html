@@ -37,40 +37,6 @@
 <div class="container">
   <h2 class="admin-title">Broker Admin</h2>
 
-  <h2>Registered Brokers</h2>
-  <ul id="brokerList"></ul>
-
-  <!-- Edit Broker Form (hidden by default) -->
-  <div id="editBrokerForm" style="display: none;">
-    <h3>Edit Broker</h3>
-    <input type="hidden" id="editBrokerId">
-    <label>First Name: <input type="text" id="editBrokerFirstName"></label><br>
-    <label>Last Name: <input type="text" id="editBrokerLastName"></label><br>
-    <label>Email: <input type="text" id="editBrokerEmail"></label><br>
-    <label>Phone Number: <input type="text" id="editBrokerPhoneNumber"></label><br>
-    <button onclick="submitEditForm()">Submit Changes</button>
-    <button onclick="closeEditForm()">Cancel</button>
-  </div>
-
-
-  <button id="showBrokerFormBtn">Add Broker</button>
-
-  <div id="brokerFormContainer" style="display: none;">
-    <h3>Add New Broker</h3>
-    <form id="brokerForm">
-      <input type="text" id="brokerFirstName" placeholder="First Name" required>
-      <input type="text" id="brokerLastName" placeholder="Last Name" required>
-      <input type="email" id="brokerEmail" placeholder="Email" required>
-      <input type="text" id="brokerPhoneNumber" placeholder="Phone Number" required>
-      <button type="submit">Submit</button>
-      <button type="button" id="cancelBrokerFormBtn">Cancel</button>
-    </form>
-  </div>
-
-
-  <br> <br> <br>
-  <h2>Listed Properties</h2>
-  <ul id="propertyList"></ul>
 </div>
 
 
