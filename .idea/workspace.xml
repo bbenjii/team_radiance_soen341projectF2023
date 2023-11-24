@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Setting up Unit Tests for sending visit requests vist and offer emails">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-10,_11_49_a_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-10__11_49_a_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint3/User_Stories_sprint3" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3/User_Stories_sprint3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/searchProperty.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/searchProperty.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -45,6 +52,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/benjaminollomo/WebstormProjects/team_radiance_soen341projectF2023&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,7 +76,7 @@
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team_radiance_soen341projectF2023/frontend/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team_radiance_soen341projectF2023/Sprint2/index.html" useBuiltInWebServerPort="true">
+    <configuration name="loginPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team_radiance_soen341projectF2023/frontend/loginPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="searchBroker.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team_radiance_soen341projectF2023/frontend/searchBroker.html" useBuiltInWebServerPort="true">
@@ -83,10 +91,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.server.js" />
+        <item itemvalue="JavaScript Debug.loginPage.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.searchBroker.html" />
         <item itemvalue="Node.js.app.js" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -104,6 +112,9 @@
       <workItem from="1699254382907" duration="624000" />
       <workItem from="1699472282665" duration="12220000" />
       <workItem from="1699834412776" duration="18953000" />
+      <workItem from="1699936386571" duration="655000" />
+      <workItem from="1700169742756" duration="6942000" />
+      <workItem from="1700248021947" duration="622000" />
     </task>
     <task id="LOCAL-00001" summary="Trial website">
       <created>1698958569289</created>
@@ -203,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699936227831</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Setting up Unit Tests for sending visit requests vist and offer emails">
+      <created>1699936442548</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699936442548</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

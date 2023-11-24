@@ -64,6 +64,7 @@ module.exports = (connection, transporter) => {
 
     // Fetch all brokers
     app.get('/Brokers', (req, res) => {
+        console.log("ok");
         connection.query('SELECT * FROM Brokers', (error, results) => {
             if (error) {
                 return res.status(500).json({ error: "Server error" });
@@ -71,6 +72,18 @@ module.exports = (connection, transporter) => {
             res.json(results);
         });
     });
+
+    // Fetch all brokers
+    app.get('/Buyers', (req, res) => {
+        console.log("ok");
+        connection.query('SELECT * FROM Buyers', (error, results) => {
+            if (error) {
+                return res.status(500).json({ error: "Server error" });
+            }
+            res.json(results);
+        });
+    });
+
 
 // Fetch all properties
     app.get('/Properties', (req, res) => {
