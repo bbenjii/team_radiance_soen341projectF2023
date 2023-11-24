@@ -1,7 +1,7 @@
 // server.js
 
 const app = require('./app');
-const PORT = 3306;
+const PORT = 3000;
 const mysql = require('mysql2');
 const nodemailer = require('nodemailer');
 
