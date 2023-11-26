@@ -1,4 +1,3 @@
-
 function requestPropertyVisit(property) {
     // Construct the query parameters
     const queryParams = new URLSearchParams(property).toString();
@@ -41,12 +40,23 @@ function sendOffer(property) {
 }
 
 
+function calculateMortgage(property) {
+    const loanAmount = property.ListingPrice - 80000;
+    const annualInterestRate = 6.12;
+    const monthlyInterestRate = annualInterestRate / 12 / 100; 
+    const loanTermInYears = 10;
+    const numberOfPayments = loanTermInYears * 12;
+
+    const mortgagePayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
+
+    alert(`Monthly Mortgage Payment: $${mortgagePayment.toFixed(2)}`);
+}
+
+
 document.getElementById('searchForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-
     const Address = document.getElementById('Address').value;
-
     const Country = document.getElementById('Country').value;
     const City = document.getElementById('City').value;
     const ListingPrice = document.getElementById('ListingPrice').value;
@@ -70,7 +80,6 @@ document.getElementById('searchForm').addEventListener('submit', function(e) {
 
     fetch(`http://localhost:3306/searchProperty?${queryParams.toString()}`)
         .then(response => response.json())
-
         .then(properties => {
             const propertyList = document.getElementById('propertyList');
             propertyList.innerHTML = properties.map(property => `
@@ -85,11 +94,10 @@ document.getElementById('searchForm').addEventListener('submit', function(e) {
                     Type: ${property.PropertyType} <br>
                     Status: ${property.Status} <br>   
                     
-            <button onclick='requestPropertyVisit(${JSON.stringify(property)})'>Request Visit</button>
-            <button onclick='sendOffer(${JSON.stringify(property)})'>Send Offer</button>
-
+                    <button onclick='requestPropertyVisit(${JSON.stringify(property)})'>Request Visit</button>
+                    <button onclick='sendOffer(${JSON.stringify(property)})'>Send Offer</button>
+                    <button onclick='calculateMortgage(${JSON.stringify(property)})'>Mortgage Calculator</button>
                </li>
             `).join('');
         })
-
 });
