@@ -1,0 +1,163 @@
+Index: Sprint3/User_Stories_sprint3
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>1)User Story 1: Calculate Mortgage Payments\n \nAs a homebuyer, I want to be able to compute monthly mortgage payments based on the loan amount, interest rate, as well as loan term.\n \nTasks for User Story 1:\n \nFrontend Development:\nCreate a user interface for entering loan amount, interest rate, and loan term.\nValidate user input to ensure the data entered is valid.\nDisplay the computed monthly mortgage payment.\n\nBackend Development:\nCreate an API endpoint to handle mortgage calculations.\nImplement the mortgage calculation logic based on the user's input.\nUnit test the mortgage calculation logic.\n\nTesting:\nPerform user testing to ensure the calculator works as expected.\nTest edge cases, such as invalid input values.\nFix any bugs or issues that arise during testing.\n\nDocumentation:\nUpdate the user documentation to include instructions on how to use the mortgage calculator.\n \n \n2) User Story 2: Save Mortgage Details\n \nAs a homebuyer, I want to be able to save the mortgage details for future reference.\n \nTasks for User Story 2:\n\nFrontend Development:\nAdd a \"Save\" button to the mortgage calculator interface.\nImplement the functionality to save mortgage details to the user's profile.\n\nBackend Development:\nCreate an API endpoint for saving mortgage details.\nStore the saved details in the database.\n\nTesting:\nTest the save functionality to ensure data is stored correctly.\nVerify that saved details are accessible from the user's profile.\n\nDocumentation:\nUpdate the user documentation to include information on how to save and access mortgage details.\n \n \n3)User Story 3: Implement Real-Time Updates\n \nAs a user, I want to receive real-time updates (i.e. notifications) for important events within the application to enhance my overall productivity.\n \nBackend Development:\nDevelop a notification system to trigger events and send notifications in real-time.\nIntegrate the notification system with relevant application events.\nEnsure secure and efficient handling of notifications.\n\nFrontend Development:\nCreate a user interface to display notifications to the user.\nImplement real-time updates in the user interface.\n\nTesting:\nTest the notification system for reliability and performance.\nConduct user testing to ensure notifications are delivered accurately and promptly.\n\nDocumentation:\nUpdate the user documentation to inform users about the new notification system\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Sprint3/User_Stories_sprint3 b/Sprint3/User_Stories_sprint3
+--- a/Sprint3/User_Stories_sprint3	(revision 634df831d2c2e092c2cbfcb0a022769f1187e6e1)
++++ b/Sprint3/User_Stories_sprint3	(date 1699634945500)
+@@ -1,67 +1,73 @@
+-1)User Story 1: Calculate Mortgage Payments
++User Story 1: Calculate Mortgage Payments
+  
+ As a homebuyer, I want to be able to compute monthly mortgage payments based on the loan amount, interest rate, as well as loan term.
+  
+ Tasks for User Story 1:
+  
+ Frontend Development:
+-Create a user interface for entering loan amount, interest rate, and loan term.
+-Validate user input to ensure the data entered is valid.
+-Display the computed monthly mortgage payment.
++- Create a user interface for entering loan amount, interest rate, and loan term.
++- Validate user input to ensure the data entered is valid.
++- Display the computed monthly mortgage payment.
+ 
+ Backend Development:
+-Create an API endpoint to handle mortgage calculations.
+-Implement the mortgage calculation logic based on the user's input.
+-Unit test the mortgage calculation logic.
++- Create an API endpoint to handle mortgage calculations.
++- Implement the mortgage calculation logic based on the user's input.
++- Unit test the mortgage calculation logic.
+ 
+ Testing:
+-Perform user testing to ensure the calculator works as expected.
+-Test edge cases, such as invalid input values.
+-Fix any bugs or issues that arise during testing.
++- Perform user testing to ensure the calculator works as expected.
++- Test edge cases, such as invalid input values.
++- Fix any bugs or issues that arise during testing.
+ 
+ Documentation:
+-Update the user documentation to include instructions on how to use the mortgage calculator.
++- Update the user documentation to include instructions on how to use the mortgage calculator.
++ 
+  
+  
+-2) User Story 2: Save Mortgage Details
++ 
++User Story 2: Save Mortgage Details
+  
+ As a homebuyer, I want to be able to save the mortgage details for future reference.
+  
+ Tasks for User Story 2:
+ 
+ Frontend Development:
+-Add a "Save" button to the mortgage calculator interface.
+-Implement the functionality to save mortgage details to the user's profile.
+-
+-Backend Development:
+-Create an API endpoint for saving mortgage details.
+-Store the saved details in the database.
++- Add a "Save" button to the mortgage calculator interface.
++- Implement the functionality to save mortgage details to the user's profile.
++- Backend Development:
++- Create an API endpoint for saving mortgage details.
++- Store the saved details in the database.
+ 
+ Testing:
+-Test the save functionality to ensure data is stored correctly.
+-Verify that saved details are accessible from the user's profile.
++- Test the save functionality to ensure data is stored correctly.
++- Verify that saved details are accessible from the user's profile.
+ 
+ Documentation:
+-Update the user documentation to include information on how to save and access mortgage details.
++- Update the user documentation to include information on how to save and access mortgage details.
++ 
+  
+- 
+-3)User Story 3: Implement Real-Time Updates
++
++
++User Story 3: Implement Real-Time Updates
+  
+ As a user, I want to receive real-time updates (i.e. notifications) for important events within the application to enhance my overall productivity.
+  
+ Backend Development:
+-Develop a notification system to trigger events and send notifications in real-time.
+-Integrate the notification system with relevant application events.
+-Ensure secure and efficient handling of notifications.
++- Develop a notification system to trigger events and send notifications in real-time.
++- Integrate the notification system with relevant application events.
++- Ensure secure and efficient handling of notifications.
+ 
+ Frontend Development:
+-Create a user interface to display notifications to the user.
+-Implement real-time updates in the user interface.
++- Create a user interface to display notifications to the user.
++- Implement real-time updates in the user interface.
+ 
+ Testing:
+-Test the notification system for reliability and performance.
+-Conduct user testing to ensure notifications are delivered accurately and promptly.
++- Test the notification system for reliability and performance.
++- Conduct user testing to ensure notifications are delivered accurately and promptly.
+ 
+ Documentation:
+-Update the user documentation to inform users about the new notification system
++- Update the user documentation to inform users about the new notification system.
++
++
++
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"1e526399-0474-459f-a786-3b53f7d4bcb1\" name=\"Changes\" comment=\"Setting up Unit Tests for sending visit requests vist and offer emails\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-10,_11_49_a_m__[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-10__11_49_a_m___Changes_.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Sprint3/User_Stories_sprint3\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Sprint3/User_Stories_sprint3\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/backend/app.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/backend/app.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/frontend/css/searchProperty.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/css/searchProperty.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/frontend/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/index.html\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"JavaScript File\" />\n        <option value=\"CSS File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2XMXtCUWIPoDvf2MC2AVuCB7zIv\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/benjaminollomo/WebstormProjects/team_radiance_soen341projectF2023&quot;,\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/Sprint2/website\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$\" />\n      <recent name=\"$PROJECT_DIR$/node_modules\" />\n      <recent name=\"$PROJECT_DIR$/Sprint2\" />\n      <recent name=\"$PROJECT_DIR$/Sprint2/website\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Node.js.server.js\">\n    <configuration name=\"index.html (1)\" type=\"JavascriptDebugType\" temporary=\"true\" nameIsGenerated=\"true\" uri=\"http://localhost:63342/team_radiance_soen341projectF2023/frontend/index.html\" useBuiltInWebServerPort=\"true\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"loginPage.html\" type=\"JavascriptDebugType\" temporary=\"true\" nameIsGenerated=\"true\" uri=\"http://localhost:63342/team_radiance_soen341projectF2023/frontend/loginPage.html\" useBuiltInWebServerPort=\"true\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"searchBroker.html\" type=\"JavascriptDebugType\" temporary=\"true\" nameIsGenerated=\"true\" uri=\"http://localhost:63342/team_radiance_soen341projectF2023/frontend/searchBroker.html\" useBuiltInWebServerPort=\"true\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"app.js\" type=\"NodeJSConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\" path-to-js-file=\"$PROJECT_DIR$/Sprint2/backend/app.js\" working-dir=\"$PROJECT_DIR$/Sprint2/backend\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"server.js\" type=\"NodeJSConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\" path-to-js-file=\"$PROJECT_DIR$/backend/server.js\" working-dir=\"$PROJECT_DIR$/backend\">\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Node.js.server.js\" />\n        <item itemvalue=\"JavaScript Debug.loginPage.html\" />\n        <item itemvalue=\"JavaScript Debug.index.html (1)\" />\n        <item itemvalue=\"JavaScript Debug.searchBroker.html\" />\n        <item itemvalue=\"Node.js.app.js\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"1e526399-0474-459f-a786-3b53f7d4bcb1\" name=\"Changes\" comment=\"\" />\n      <created>1698440134562</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1698440134562</updated>\n      <workItem from=\"1698440137334\" duration=\"7604000\" />\n      <workItem from=\"1698453508765\" duration=\"1586000\" />\n      <workItem from=\"1698957471490\" duration=\"6168000\" />\n      <workItem from=\"1699254382907\" duration=\"624000\" />\n      <workItem from=\"1699472282665\" duration=\"12220000\" />\n      <workItem from=\"1699834412776\" duration=\"18953000\" />\n      <workItem from=\"1699936386571\" duration=\"655000\" />\n      <workItem from=\"1700169742756\" duration=\"6942000\" />\n      <workItem from=\"1700248021947\" duration=\"622000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Trial website\">\n      <created>1698958569289</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1698958569289</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Trial website\">\n      <created>1698959797610</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1698959797610</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Trial website\">\n      <created>1698959894561</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1698959894561</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"connecting the SearchBroker page to the backend\">\n      <created>1699637974658</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699637974658</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Setting up Unit Tests for SearchBrokers\">\n      <created>1699917074185</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699917074185</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Setting up Unit Tests for SearchBrokers\">\n      <created>1699917344217</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699917344217</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"Setting up Unit Tests for SearchBrokers\">\n      <created>1699917353492</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699917353492</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"Setting up Unit Tests for SearchBrokers\">\n      <created>1699918290589</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699918290589</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"Setting up Unit Tests for SearchBrokers\">\n      <created>1699918500798</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699918500798</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"Setting up Unit Tests for SearchBrokers\">\n      <created>1699918649453</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699918649453</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"Setting up Unit Tests for SearchBrokers\">\n      <created>1699918979109</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699918979109</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"Setting up Unit Tests for SearchBrokers\">\n      <created>1699919386791</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699919386791</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"Setting up Unit Tests for SearchBrokers\">\n      <created>1699919829142</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699919829142</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"Setting up Unit Tests for sending visit requests vist and offer emails\">\n      <created>1699936227831</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699936227831</updated>\n    </task>\n    <task id=\"LOCAL-00015\" summary=\"Setting up Unit Tests for sending visit requests vist and offer emails\">\n      <created>1699936442548</created>\n      <option name=\"number\" value=\"00015\" />\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1699936442548</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"16\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Trial website\" />\n    <MESSAGE value=\"linking the backend-server requestPropertyVisit and sendOffer functions to corresponding buttons on the front-end\" />\n    <MESSAGE value=\"connecting the SearchBroker page to the backend\" />\n    <MESSAGE value=\"Setting up Unit Tests for SearchBrokers\" />\n    <MESSAGE value=\"Setting up Unit Tests for sending visit requests vist and offer emails\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Setting up Unit Tests for sending visit requests vist and offer emails\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 634df831d2c2e092c2cbfcb0a022769f1187e6e1)
++++ b/.idea/workspace.xml	(date 1700931292140)
+@@ -5,13 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Setting up Unit Tests for sending visit requests vist and offer emails">
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-10,_11_49_a_m__[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-10__11_49_a_m___Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Sprint3/User_Stories_sprint3" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3/User_Stories_sprint3" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/css/searchProperty.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/searchProperty.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -115,6 +109,7 @@
+       <workItem from="1699936386571" duration="655000" />
+       <workItem from="1700169742756" duration="6942000" />
+       <workItem from="1700248021947" duration="622000" />
++      <workItem from="1700865105575" duration="207000" />
+     </task>
+     <task id="LOCAL-00001" summary="Trial website">
+       <created>1698958569289</created>
+@@ -221,7 +216,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1699936442548</updated>
+     </task>
+-    <option name="localTasksCounter" value="16" />
++    <task id="LOCAL-00016" summary="Setting up Unit Tests for sending visit requests vist and offer emails">
++      <created>1700865291822</created>
++      <option name="number" value="00016" />
++      <option name="presentableId" value="LOCAL-00016" />
++      <option name="project" value="LOCAL" />
++      <updated>1700865291822</updated>
++    </task>
++    <option name="localTasksCounter" value="17" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">

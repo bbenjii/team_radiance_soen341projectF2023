@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const cors = require('cors');
+const {query} = require("express");
 
 
 //operations on database
@@ -19,6 +20,7 @@ module.exports = (connection, transporter) => {
 // Serve static files (HTML, CSS, etc.) from a "public" directory
     app.use(express.static(path.join(__dirname, '../frontend')));
 
+    //search property function
     app.get('/searchProperty', (req, res) => {
         const {
             Address, Country, City, ListingPrice, Bedrooms, Bathrooms, Description, PropertyType, Status
@@ -43,6 +45,7 @@ module.exports = (connection, transporter) => {
 
     });
 
+    //search broker function
     app.get('/searchBroker', (req, res) => {
         const {
             FirstName, LastName, Email, PhoneNumber
@@ -72,9 +75,115 @@ module.exports = (connection, transporter) => {
         });
     });
 
+
 // Fetch all properties
     app.get('/Properties', (req, res) => {
         connection.query('SELECT * FROM Properties', (error, results) => {
+            if (error) {
+                return res.status(500).json({ error: "Server error" });
+            }
+            res.json(results);
+        });
+    });
+
+    // Fetch properties of a specific broker
+    app.get('/Properties/:brokerID', (req, res) => {
+        const brokerID = req.params.brokerID;
+
+        const query = `SELECT * FROM Properties WHERE BrokerID = ?`;
+
+        connection.query(query, [brokerID], (error, results) => {
+            if (error) {
+                console.error('Error Finding Properties:', error);
+                res.status(500).json({ success: false, message: 'Database error' });
+            } else {
+                res.json(results);
+            }
+        });
+    });
+
+
+    // Fetch visit requests of a specific broker
+    app.get('/requestVisit/:brokerID', (req, res) => {
+        const brokerID = req.params.brokerID;
+
+        const query = `SELECT * FROM VisitRequests WHERE BrokerID = ?`;
+
+        connection.query(query, [brokerID], (error, results) => {
+            if (error) {
+                console.error('Error Finding Properties:', error);
+                res.status(500).json({ success: false, message: 'Database error' });
+            } else {
+
+                res.json(results);
+            }
+        });
+    });
+
+    // Fetch offers of a specific broker
+    app.get('/offerRequest/:brokerID', (req, res) => {
+        const brokerID = req.params.brokerID;
+
+        const query = `SELECT * FROM OfferRequests WHERE BrokerID = ?`;
+
+        connection.query(query, [brokerID], (error, results) => {
+            if (error) {
+                console.error('Error Finding Requests:', error);
+                res.status(500).json({ success: false, message: 'Database error' });
+            } else {
+
+                res.json(results);
+            }
+        });
+    });
+
+    // accept or reject offer
+    app.put('/updateOfferStatus', (req, res) => {
+
+        const {offerID, propertyID , status} = req.body;
+        console.log(offerID);
+        console.log(propertyID);
+
+        console.log(status);
+
+        const query1 = 'UPDATE OfferRequests SET Status = ? WHERE OfferID = ?';
+
+        const query2 = 'UPDATE Properties SET Status = ? WHERE PropertyID = ?';
+
+        connection.query(query1, [status, offerID], (error, results) => {
+            if (error) {
+                console.error('Error Finding Requests:', error);
+                res.status(500).json({ success: false, message: 'Database error' });
+            } else {
+                res.json(results);
+
+                if (status == "Accepted"){
+                    connection.query(query2, ["Sold", propertyID]);
+                }
+            }
+        });
+
+    });
+
+    // Fetch address  of a specific property id
+    app.get('/Properties/:propertyID', (req, res) => {
+        const propertyID = req.params.brokerID;
+
+        const query = `SELECT Address FROM VisitRequests WHERE PropertyID = ?`;
+
+        connection.query(query, [propertyID], (error, results) => {
+            if (error) {
+                console.error('Error Finding Properties:', error);
+                res.status(500).json({ success: false, message: 'Database error' });
+            } else {
+                res.json(results);
+            }
+        });
+    });
+
+    // Fetch all Buyers
+    app.get('/Buyers', (req, res) => {
+        connection.query('SELECT * FROM Buyers', (error, results) => {
             if (error) {
                 return res.status(500).json({ error: "Server error" });
             }
@@ -102,20 +211,34 @@ module.exports = (connection, transporter) => {
 //Add new Property to database
     app.post('/addProperty', (req, res) => {
 
+        const { Address, Country, City, ListingPrice, Bedrooms, Bathrooms, Description, BrokerID, PropertyType, Status} = req.body;
 
-        const { Address, Country, City, ListingPrice, Bedrooms, Bathrooms, PropertyType, Description, Status} = req.body;
-
-        const sql = 'INSERT INTO Properties (Address, Country, City, ListingPrice, Bedrooms, Bathrooms, PropertyType, Description, Status) VALUES (?, ?, ?, ?,?, ?, ?, ?, ?)';
-        connection.query(sql, [Address, Country, City, ListingPrice, Bedrooms, Bathrooms, PropertyType, Description, Status], (error, results) => {
+        const sql = 'INSERT INTO Properties (Address, Country, City, ListingPrice, Bedrooms, Bathrooms, PropertyType, Description, BrokerID, Status) VALUES (?, ?, ?, ?,?, ?, ?, ?, ?)';
+        connection.query(sql, [Address, Country, City, ListingPrice, Bedrooms, Bathrooms, PropertyType, Description, BrokerID, Status], (error, results) => {
             if (error) {
                 console.error("MySQL Error:", error);
-                res.status(500).json({ message: 'Error adding broker.' });
+                res.status(500).json({ message: 'Error adding property.' });
             }
             console.log('Broker added successfully.');
-            res.json({ success: true, message: 'Broker added successfully.' });
+            res.json({ success: true, message: 'property added successfully.' });
         });
     });
 
+    //edit property information
+    app.put('/Properties/:id', (req, res) => {
+        const propertyID = parseInt(req.params.id,10);
+        const { Address, Country, City, ListingPrice, Bedrooms, Bathrooms, Description, BrokerID, PropertyType,Status} = req.body;
+
+        const query = 'UPDATE Properties SET Address = ?, Country = ?, City = ?, ListingPrice = ?, Bedrooms = ?, Bathrooms = ?,  Description = ?, BrokerID = ?, PropertyType = ?, Status = ? WHERE PropertyID = ?';
+        connection.query(query, [Address, Country, City, ListingPrice, Bedrooms, Bathrooms,  Description, BrokerID, PropertyType, Status, propertyID], (error, results) => {
+            if (error) {
+                console.error(error);
+                res.json({ success: false, message: 'Error updating property' });
+            } else {
+                res.json({ success: true, message: 'property updated successfully' });
+            }
+        });
+    });
 
 
 
@@ -159,7 +282,7 @@ module.exports = (connection, transporter) => {
         });
     });
 
-
+//edit broker information
     app.put('/Brokers/:id', (req, res) => {
         const brokerId = parseInt(req.params.id,10);
         const { FirstName, LastName, Email, PhoneNumber } = req.body;
@@ -175,7 +298,50 @@ module.exports = (connection, transporter) => {
         });
     });
 
-    app.get('/requestPropertyVisit', (req, res) => {
+    app.get('/requestVisit', (req, res) => {
+        const {
+            BuyerID, BrokerID, PropertyID, RequestDate, VisitDate, Status, Message
+            } = req.query;
+
+        const query = 'INSERT INTO VisitRequests (BuyerID, BrokerID, PropertyID, RequestDate, VisitDate, Status, AdditionalNotes) VALUES (?, ?, ?, ?,?, ?, ?)';
+
+        connection.query(query, [BuyerID, BrokerID, PropertyID, RequestDate, VisitDate, Status, Message], (error, results) => {
+            if (error) {
+                console.error("MySQL Error:", error);
+                res.status(500).json({ message: 'Error sending visit request.' });
+            }else{
+                console.log('visit request added successfully.');
+                res.json({ success: true, message: 'visit request succesfully sent.' });
+            }
+
+        });
+
+    });
+
+    app.get('/sendOfferRequest', (req, res) => {
+        console.log("called");
+        const {
+            PropertyID, BrokerID, BuyerName, BuyerEmail, Address, OfferAmount, DeedOfSaleDate, OccupancyDate, OfferDate, Message
+        } = req.query;
+
+        const query = 'INSERT INTO OfferRequests (PropertyID, BrokerID, BuyerName, BuyerEmail, PropertyAddress, OfferAmount, DeedOfSaleDate, OccupancyDate, OfferDate, AdditionalNotes) VALUES (?, ?, ?, ?,?, ?, ?,?, ?, ?)';
+
+        connection.query(query, [PropertyID, BrokerID, BuyerName, BuyerEmail, Address, OfferAmount, DeedOfSaleDate, OccupancyDate, OfferDate, Message], (error, results) => {
+            if (error) {
+                console.error("MySQL Error:", error);
+                res.status(500).json({ message: 'Error sending offer.' });
+            }else{
+                console.log('Offer succesfully sent.');
+                res.json({ success: true, message: 'visit request added successfully.' });
+            }
+
+        });
+
+    });
+
+
+
+        app.get('/requestPropertyVisit', (req, res) => {
         const {
             Address, Country, City, ListingPrice, Bedrooms, Bathrooms, Description, PropertyType, Status
         } = req.query;

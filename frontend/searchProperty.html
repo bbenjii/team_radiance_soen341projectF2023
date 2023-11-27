@@ -34,7 +34,6 @@
 
 
 <body>
-
 <div class="container">
   <form id="searchForm">
     <h3>Search Property</h3>
@@ -79,8 +78,61 @@
   <!-- Results will be populated here -->
     <ul id="propertyList"></ul>
 
+  <div id="visitRequestForm" style="display:none;">
+    <h3>Request a Visit</h3>
+    <input type="hidden" id="selectedPropertyID">
+    <input type="hidden" id="selectedBrokerID">
 
+    <label for="buyerProfileSelect">Select your buyer profile:</label>
+    <select id="buyerProfileSelect">
+      <!-- Buyer profiles will be populated here -->
+    </select>
+    <br>
+    <label for="visitDate">Visit Date:</label>
+    <input type="date" id="visitDate">
+    <br>
+    <label for="additionalMessage">Additional Message:</label>
+    <textarea id="additionalMessage"></textarea>
+    <br>
+    <button onclick="submitVisitRequest()">Submit Request</button>
+    <button onclick="closeVisitRequestForm()">Cancel</button>
   </div>
+
+
+  <div id="offerRequestForm" style="display:none;">
+    <h3>Request a Visit</h3>
+    <input type="hidden" id="PropertyID">
+    <input type="hidden" id="BrokerID">
+
+    <label for="buyerName">Enter the buyer's name:</label>
+    <input type="text" id="buyerName">
+
+    <label for="buyerEmail">Enter the buyer's email:</label>
+    <input type="email" id="buyerEmail">
+
+    <input type="hidden" id="propertyAddress">
+
+
+    <label for="offerAmount">Enter your offer amount:</label>
+    <input type="number" id="offerAmount">
+
+
+    <label for="deedOfSaleDate">Deed of Sale Date:</label>
+    <input type="date" id="deedOfSaleDate">
+    <br>
+
+    <label for="occupancyDate">Occupancy Date:</label>
+    <input type="date" id="occupancyDate">
+    <br>
+
+    <label for="Message">Additional Message:</label>
+    <textarea id="Message"></textarea>
+    <br>
+    <button onclick="submitOfferRequest()">Submit Request</button>
+    <button onclick="closeOfferRequestForm()">Cancel</button>
+  </div>
+
+</div>
 
 
 

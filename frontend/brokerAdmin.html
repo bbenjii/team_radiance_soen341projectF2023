@@ -37,7 +37,134 @@
 <div class="container">
   <h2 class="admin-title">Broker Admin</h2>
 
+
+  <div class="login-section">
+    <h1>Login</h1>
+<!--    <label for="userType">Choose your profile:</label>-->
+
+    <div id="profiles-container">
+      <!-- Profiles will be loaded here -->
+    </div>
+
+  </div>
+
+  <div id="properties-container">
+
+    <h3 id="propertiesTitle"> </h3>
+    <ul id="propertyList">
+      <!-- Property items will be added here dynamically -->
+    </ul>
+
+
+
+    <!-- Edit Property Form (hidden by default) -->
+    <div id="editPropertyForm" style="display: none;">
+      <h3>Edit Property</h3>
+      <input type="hidden" id="editPropertyId">
+      <label>Address: <input type="text" id="editPropertyAddress"></label>
+      <label>Country: <input type="text" id="editPropertyCountry"></label>
+      <label>City: <input type="text" id="editPropertyCity"></label>
+      <label>Listing Price: <input type="number" id="editPropertyListingPrice"></label>
+
+
+
+      <label>Bedrooms:
+        <select id="editPropertyBedrooms" name="Bedrooms">
+          <option value="" disabled hidden selected>number of bedrooms</option>
+          <option value="1">1 bedroom</option>
+          <option value="2">2 bedrooms</option>
+          <option value="3">3 bedrooms</option>
+          <option value="4">4 bedrooms</option>
+          <option value="5">5 bedrooms</option>
+        </select>
+
+      </label>
+
+      <label>Bathrooms:
+        <select id="editPropertyBathrooms" name="Bathrooms">
+          <option value="" disabled hidden selected>number of bedrooms</option>
+          <option value="1">1 bathroom</option>
+          <option value="2">2 bathrooms</option>
+          <option value="3">3 bathrooms</option>
+          <option value="4">4 bathrooms</option>
+          <option value="5">5 bathrooms</option>
+        </select>
+
+      </label>
+
+      <label>Description: <input type="text" id="editPropertyDescription"></label>
+      <label>Broker in charge: <input type="number" id="editPropertyBrokerID"></label> <br>
+      <label>Property Type: <input type="text" id="editPropertyType"></label>
+      <label>Status: <input type="text" id="editPropertyStatus"></label>
+
+      <button onclick="submitEditForm()">Submit Changes</button>
+      <button onclick="closeEditForm()">Cancel</button>
+    </div>
+
+
+
+    <button id="showPropertyFormBtn">Add Property</button>
+
+    <div id="propertyFormContainer" style="display: none;">
+      <h3>Add New Property</h3>
+      <form id="propertyForm">
+        <input type="text" id="Address" placeholder="Address" required>
+        <input type="text" id="Country" placeholder="Country" required>
+        <input type="text" id="City" placeholder="City" required>
+        <input type="number" id="ListingPrice" placeholder="Listing Price" required>  <br> <br>
+        <select id="Bedrooms" name="Bedrooms">
+          <option value="" disabled hidden selected>number of bedrooms</option>
+          <option value="1">1 bedroom</option>
+          <option value="2">2 bedrooms</option>
+          <option value="3">3 bedrooms</option>
+          <option value="4">4 bedrooms</option>
+          <option value="5">5 bedrooms</option>
+        </select> <br>  <br>
+
+        <select id="Bathrooms" name="Bathrooms" required>
+          <option value="" disabled hidden selected>number of bathrooms</option>
+          <option value=""></option>
+          <option value="1">1 bathroom</option>
+          <option value="2">2 bathrooms</option>
+          <option value="3">3 bathrooms</option>
+          <option value="4">4 bathrooms</option>
+          <option value="5">5 bathrooms</option>
+        </select>  <br> <br>
+
+        <input type="text" id="Description" placeholder="Description" required>
+        <input type="text" id="PropertyType" placeholder="PropertyType" required>
+        <input type="text" id="Status" placeholder="Status" required>
+
+        <button type="submit">Submit</button>
+        <button type="button" id="cancelPropertyFormBtn">Cancel</button>
+      </form>
+    </div>
+
+
+  </div>
+
+
+  <div id="offerRequests-container">
+
+    <h3 id="offerRequests-Title"> </h3>
+    <ul id="offerRequestList">
+      <!-- visit request items will be added here dynamically -->
+    </ul>
+
+  </div>
+
+  <div id="visitRequests-container">
+
+    <h3 id="visitRequests-Title"> </h3>
+    <ul id="visitRequestList">
+      <!-- visit request items will be added here dynamically -->
+    </ul>
+
+  </div>
+
 </div>
+
+
 
 
 <!-- footer section starts -->
@@ -87,7 +214,7 @@
 <!-- footer section ends -->
 
 
-<script src="systemAdminBoard.js">
+<script src="brokerAdmin.js">
 
   let menu = document.querySelector('#menu-bars');
   let navbar = document.querySelector('.navbar');

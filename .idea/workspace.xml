@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Setting up Unit Tests for sending visit requests vist and offer emails">
-      <change beforePath="$PROJECT_DIR$/Sprint3/User_Stories_sprint3" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint3/User_Stories_sprint3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-10,_11_49_a_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/brokerAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/brokerAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerAdmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/brokerBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerBoard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/brokerBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/searchProperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/searchProperty.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +27,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="backend_sp4" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="backend_sp4_loginLogic_attempts" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,13 +79,13 @@
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team_radiance_soen341projectF2023/frontend/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team_radiance_soen341projectF2023/Sprint2/index.html" useBuiltInWebServerPort="true">
+    <configuration name="loginPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team_radiance_soen341projectF2023/frontend/loginPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="searchBroker.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team_radiance_soen341projectF2023/frontend/searchBroker.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Sprint2/backend/app.js" working-dir="$PROJECT_DIR$/Sprint2/backend">
+    <configuration name="brokerAdmin.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/frontend/brokerAdmin.js" working-dir="$PROJECT_DIR$/frontend">
       <method v="2" />
     </configuration>
     <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/backend/server.js" working-dir="$PROJECT_DIR$/backend">
@@ -83,10 +94,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.server.js" />
+        <item itemvalue="Node.js.brokerAdmin.js" />
+        <item itemvalue="JavaScript Debug.loginPage.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.searchBroker.html" />
-        <item itemvalue="Node.js.app.js" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -226,6 +237,7 @@
     <MESSAGE value="connecting the SearchBroker page to the backend" />
     <MESSAGE value="Setting up Unit Tests for SearchBrokers" />
     <MESSAGE value="Setting up Unit Tests for sending visit requests vist and offer emails" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up Unit Tests for sending visit requests vist and offer emails" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

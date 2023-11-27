@@ -1,0 +1,115 @@
+Index: Sprint3/User_stories_sprint3
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>User Story 1: Calculate Mortgage Payments\n \nAs a homebuyer, I want to be able to compute monthly mortgage payments based on the loan amount, interest rate, as well as loan term.\n \nTasks for User Story 1:\n \nFrontend Development:\n- Create a user interface for entering loan amount, interest rate, and loan term.\n- Validate user input to ensure the data entered is valid.\n- Display the computed monthly mortgage payment.\n\nBackend Development:\n- Create an API endpoint to handle mortgage calculations.\n- Implement the mortgage calculation logic based on the user's input.\n- Unit test the mortgage calculation logic.\n\nTesting:\n- Perform user testing to ensure the calculator works as expected.\n- Test edge cases, such as invalid input values.\n- Fix any bugs or issues that arise during testing.\n\nDocumentation:\n- Update the user documentation to include instructions on how to use the mortgage calculator.\n \n \n \n \nUser Story 2: Save Mortgage Details\n \nAs a homebuyer, I want to be able to save the mortgage details for future reference.\n \nTasks for User Story 2:\n\nFrontend Development:\n- Add a \"Save\" button to the mortgage calculator interface.\n- Implement the functionality to save mortgage details to the user's profile.\n- Backend Development:\n- Create an API endpoint for saving mortgage details.\n- Store the saved details in the database.\n\nTesting:\n- Test the save functionality to ensure data is stored correctly.\n- Verify that saved details are accessible from the user's profile.\n\nDocumentation:\n- Update the user documentation to include information on how to save and access mortgage details.\n \n \n\n\nUser Story 3: Implement Real-Time Updates\n \nAs a user, I want to receive real-time updates (i.e. notifications) for important events within the application to enhance my overall productivity.\n \nBackend Development:\n- Develop a notification system to trigger events and send notifications in real-time.\n- Integrate the notification system with relevant application events.\n- Ensure secure and efficient handling of notifications.\n\nFrontend Development:\n- Create a user interface to display notifications to the user.\n- Implement real-time updates in the user interface.\n\nTesting:\n- Test the notification system for reliability and performance.\n- Conduct user testing to ensure notifications are delivered accurately and promptly.\n\nDocumentation:\n- Update the user documentation to inform users about the new notification system.\n\n\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Sprint3/User_stories_sprint3 b/Sprint3/User_stories_sprint3
+--- a/Sprint3/User_stories_sprint3	(revision 634df831d2c2e092c2cbfcb0a022769f1187e6e1)
++++ b/Sprint3/User_stories_sprint3	(date 1700931612779)
+@@ -1,73 +1,67 @@
+-User Story 1: Calculate Mortgage Payments
++1)User Story 1: Calculate Mortgage Payments
+  
+ As a homebuyer, I want to be able to compute monthly mortgage payments based on the loan amount, interest rate, as well as loan term.
+  
+ Tasks for User Story 1:
+  
+ Frontend Development:
+-- Create a user interface for entering loan amount, interest rate, and loan term.
+-- Validate user input to ensure the data entered is valid.
+-- Display the computed monthly mortgage payment.
++Create a user interface for entering loan amount, interest rate, and loan term.
++Validate user input to ensure the data entered is valid.
++Display the computed monthly mortgage payment.
+ 
+ Backend Development:
+-- Create an API endpoint to handle mortgage calculations.
+-- Implement the mortgage calculation logic based on the user's input.
+-- Unit test the mortgage calculation logic.
++Create an API endpoint to handle mortgage calculations.
++Implement the mortgage calculation logic based on the user's input.
++Unit test the mortgage calculation logic.
+ 
+ Testing:
+-- Perform user testing to ensure the calculator works as expected.
+-- Test edge cases, such as invalid input values.
+-- Fix any bugs or issues that arise during testing.
++Perform user testing to ensure the calculator works as expected.
++Test edge cases, such as invalid input values.
++Fix any bugs or issues that arise during testing.
+ 
+ Documentation:
+-- Update the user documentation to include instructions on how to use the mortgage calculator.
+- 
++Update the user documentation to include instructions on how to use the mortgage calculator.
+  
+  
+- 
+-User Story 2: Save Mortgage Details
++2) User Story 2: Save Mortgage Details
+  
+ As a homebuyer, I want to be able to save the mortgage details for future reference.
+  
+ Tasks for User Story 2:
+ 
+ Frontend Development:
+-- Add a "Save" button to the mortgage calculator interface.
+-- Implement the functionality to save mortgage details to the user's profile.
+-- Backend Development:
+-- Create an API endpoint for saving mortgage details.
+-- Store the saved details in the database.
++Add a "Save" button to the mortgage calculator interface.
++Implement the functionality to save mortgage details to the user's profile.
++
++Backend Development:
++Create an API endpoint for saving mortgage details.
++Store the saved details in the database.
+ 
+ Testing:
+-- Test the save functionality to ensure data is stored correctly.
+-- Verify that saved details are accessible from the user's profile.
++Test the save functionality to ensure data is stored correctly.
++Verify that saved details are accessible from the user's profile.
+ 
+ Documentation:
+-- Update the user documentation to include information on how to save and access mortgage details.
+- 
++Update the user documentation to include information on how to save and access mortgage details.
+  
+-
+-
+-User Story 3: Implement Real-Time Updates
++ 
++3)User Story 3: Implement Real-Time Updates
+  
+ As a user, I want to receive real-time updates (i.e. notifications) for important events within the application to enhance my overall productivity.
+  
+ Backend Development:
+-- Develop a notification system to trigger events and send notifications in real-time.
+-- Integrate the notification system with relevant application events.
+-- Ensure secure and efficient handling of notifications.
++Develop a notification system to trigger events and send notifications in real-time.
++Integrate the notification system with relevant application events.
++Ensure secure and efficient handling of notifications.
+ 
+ Frontend Development:
+-- Create a user interface to display notifications to the user.
+-- Implement real-time updates in the user interface.
++Create a user interface to display notifications to the user.
++Implement real-time updates in the user interface.
+ 
+ Testing:
+-- Test the notification system for reliability and performance.
+-- Conduct user testing to ensure notifications are delivered accurately and promptly.
++Test the notification system for reliability and performance.
++Conduct user testing to ensure notifications are delivered accurately and promptly.
+ 
+ Documentation:
+-- Update the user documentation to inform users about the new notification system.
+-
+-
+-
++Update the user documentation to inform users about the new notification system
+ 

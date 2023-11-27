@@ -21,7 +21,10 @@ function fetchProperties() {
                     Address: ${property.Address} <br>
                     Country: ${property.Country} <br>
                     City: ${property.City} <br>
-                     <button onClick="openEditForm('${property.PropertyID}', '${property.Address}', '${property.Country}', '${property.City}', '${property.ListingPrice}', '${property.Bedrooms}', '${property.Bathrooms}', '${property.Description}', '${property.PropertyType}', '${property.Status}')">Edit</button>
+                    PropertyType: ${property.PropertyType} <br>
+
+          
+                     <button onClick="openEditForm('${property.PropertyID}', '${property.Address}', '${property.Country}', '${property.City}', '${property.ListingPrice}', '${property.Bedrooms}', '${property.Bathrooms}', '${property.Description}', '${property.BrokerID}', '${property.PropertyType}', '${property.Status}')">Edit</button>
                     <button data-id="${property.PropertyID}" class="delete-property">Delete</button>
 
                 </li>
@@ -121,7 +124,7 @@ function deleteProperty(id) {
 }
 
 
-function openEditForm(id, address, country, city, listingPrice, bedrooms, bathrooms, descriptions, propertyType, status) {
+function openEditForm(id, address, country, city, listingPrice, bedrooms, bathrooms, descriptions, brokerID, propertyType, status) {
     const editForm = document.getElementById('editPropertyForm');
     editForm.style.display = 'block'; // show the form
 
@@ -134,13 +137,89 @@ function openEditForm(id, address, country, city, listingPrice, bedrooms, bathro
     document.getElementById('editPropertyBedrooms').value = bedrooms;
     document.getElementById('editPropertyBathrooms').value = bathrooms;
     document.getElementById('editPropertyDescription').value = descriptions;
+    document.getElementById('editPropertyBrokerID').value = brokerID;
     document.getElementById('editPropertyType').value = propertyType;
     document.getElementById('editPropertyStatus').value = status;
 
 }
 
+function submitEditForm() {
+    const id = parseInt(document.getElementById('editPropertyId').value,10);
+    const Address = document.getElementById('editPropertyAddress').value;
+    const Country = document.getElementById('editPropertyCountry').value;
+    const City = document.getElementById('editPropertyCity').value;
+    const ListingPrice = document.getElementById('editPropertyListingPrice').value;
+    const Bedrooms = document.getElementById('editPropertyBedrooms').value;
+    const Bathrooms = document.getElementById('editPropertyBathrooms').value;
+    const Descriptions = document.getElementById('editPropertyDescription').value;
+    const BrokerID = document.getElementById('editPropertyBrokerID').value;
+    const PropertyType = document.getElementById('editPropertyType').value;
+    const Status = document.getElementById('editPropertyStatus').value;
+
+    // Basic validation
+    if (!id || !Address || !Country || !City || !ListingPrice || !Bedrooms || !Bathrooms || !Descriptions || !BrokerID || !PropertyType || !Status ) {
+        alert("All fields are required.");
+        return;
+    }
+
+    // Send the updated data to the server
+    fetch(`http://localhost:3306/Properties/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            Address: Address,
+            Country: Country,
+            City: City,
+            ListingPrice: ListingPrice,
+            Bedrooms: Bedrooms,
+            Bathrooms: Bathrooms,
+            Description: Descriptions,
+            BrokerID: BrokerID,
+            PropertyType: PropertyType,
+            Status: Status,
+
+        })
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then(data => {
+            if(data.success) {
+                fetchProperties(); // Refresh the list
+                closeEditForm();
+            } else {
+                alert("Error updating property.");
+            }
+        })
+        .catch(error => {
+            alert("There was a problem with the request: " + error.message);
+        });
+}
 
 
 function closeEditForm() {
     document.getElementById('editPropertyForm').style.display = 'none';
+}
+
+
+function brokerSelect(){
+
+    fetch(`http://localhost:3306/Brokers`)
+        .then(response => response.json())
+        .then(profiles => {
+            const select = document.getElementById('selectBrokerID');
+            select.innerHTML = `<option value="">Broker in Charge</option>`;
+
+            profiles.forEach(profile => {
+                select.innerHTML += `<option value="${profile.id}"> ${profile.FirstName} ${profile.LastName}</option>`;
+            });
+
+            container.appendChild(select);
+
+        })
 }
