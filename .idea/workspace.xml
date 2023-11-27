@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Setting up Unit Tests for sending visit requests vist and offer emails">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-10,_11_49_a_m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/brokerAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/brokerAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/brokerBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerBoard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/brokerBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerBoard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/searchProperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/searchProperty.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.js" afterDir="false" />
-    </list>
+    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Setting up Unit Tests for sending visit requests vist and offer emails" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
