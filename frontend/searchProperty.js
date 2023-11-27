@@ -193,6 +193,19 @@ function sendOffer(property) {
 }
 
 
+function calculateMortgage(property) {
+    const loanAmount = property.ListingPrice - 80000;
+    const annualInterestRate = 6.12;
+    const monthlyInterestRate = annualInterestRate / 12 / 100;
+    const loanTermInYears = 10;
+    const numberOfPayments = loanTermInYears * 12;
+
+    const mortgagePayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
+
+    alert(`Monthly Mortgage Payment: $${mortgagePayment.toFixed(2)}`);
+}
+
+
 document.getElementById('searchForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -238,10 +251,9 @@ document.getElementById('searchForm').addEventListener('submit', function(e) {
                     Type: ${property.PropertyType} <br>
                     Status: ${property.Status} <br>   
                     
-<!--            <button onclick='requestPropertyVisit(${JSON.stringify(property)})'>Request Visit</button>-->
             <button onclick='requestPropertyVisit(${property.PropertyID}, ${property.BrokerID}); <!--PropertyVisitRequest(${JSON.stringify(property)}) -->'>Request Visit</button>
-<!--            <button onclick='sendOffer(${JSON.stringify(property)})'>Send Offer</button>-->
             <button onclick='sendOfferRequest(${property.PropertyID}, ${property.BrokerID}, "${property.Address}");  <!--sendOffer(${JSON.stringify(property)})-->'>Send Offer Request</button>
+            <button onclick='calculateMortgage(${JSON.stringify(property)})'>Mortgage Calculator</button>
 
                </li>
              
