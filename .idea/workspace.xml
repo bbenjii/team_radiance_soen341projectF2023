@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Setting up Unit Tests for sending visit requests vist and offer emails" />
+    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Merged the mortgage calculator feature version, with the Broker Admin's features">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-10__11_49_a_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,6 +108,7 @@
       <workItem from="1699254382907" duration="624000" />
       <workItem from="1699472282665" duration="12220000" />
       <workItem from="1699834412776" duration="18953000" />
+      <workItem from="1701130030864" duration="2886000" />
     </task>
     <task id="LOCAL-00001" summary="Trial website">
       <created>1698958569289</created>
@@ -204,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699936227831</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Merged the mortgage calculator feature version, with the Broker Admin's features">
+      <created>1701060270535</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701060270535</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +239,7 @@
     <MESSAGE value="Setting up Unit Tests for SearchBrokers" />
     <MESSAGE value="Setting up Unit Tests for sending visit requests vist and offer emails" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Merged the mortgage calculator feature version, with the Broker Admin's features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merged the mortgage calculator feature version, with the Broker Admin's features" />
   </component>
 </project>
