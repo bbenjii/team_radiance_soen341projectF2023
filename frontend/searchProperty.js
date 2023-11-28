@@ -251,8 +251,8 @@ document.getElementById('searchForm').addEventListener('submit', function(e) {
                     Type: ${property.PropertyType} <br>
                     Status: ${property.Status} <br>   
                     
-            <button onclick='requestPropertyVisit(${property.PropertyID}, ${property.BrokerID}); <!--PropertyVisitRequest(${JSON.stringify(property)}) -->'>Request Visit</button>
-            <button onclick='sendOfferRequest(${property.PropertyID}, ${property.BrokerID}, "${property.Address}");  <!--sendOffer(${JSON.stringify(property)})-->'>Send Offer Request</button>
+            <button onclick='requestPropertyVisit(${property.PropertyID}, ${property.BrokerID}); PropertyVisitRequest(${JSON.stringify(property)}) '>Request Visit</button>
+            <button onclick='sendOfferRequest(${property.PropertyID}, ${property.BrokerID}, "${property.Address}");  sendOffer(${JSON.stringify(property)})'>Send Offer Request</button>
             <button onclick='calculateMortgage(${JSON.stringify(property)})'>Mortgage Calculator</button>
 
                </li>

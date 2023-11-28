@@ -1,6 +1,5 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("yolo");
     fetchBrokers();
     fetchProperties();
 });
