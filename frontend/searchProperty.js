@@ -194,13 +194,19 @@ function sendOffer(property) {
 
 
 function calculateMortgage(property) {
-    const loanAmount = property.ListingPrice - 80000;
-    const annualInterestRate = 6.12;
+    const loanAmount = parseFloat(prompt('Enter the Loan Amount:'));
+    const annualInterestRate = parseFloat(prompt('Enter Annual Interest Rate:'));
+    const loanTermInYears = parseInt(prompt('Enter Loan Term (in years):'));
+
+    if (isNaN(loanAmount) || isNaN(annualInterestRate) || isNaN(loanTermInYears)) {
+        alert('Invalid input. Please enter valid numbers.');
+        return;
+    }
+
     const monthlyInterestRate = annualInterestRate / 12 / 100;
-    const loanTermInYears = 10;
     const numberOfPayments = loanTermInYears * 12;
 
-    const mortgagePayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
+    const mortgagePayment = loanAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfPayments)) / (Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1);
 
     alert(`Monthly Mortgage Payment: $${mortgagePayment.toFixed(2)}`);
 }
