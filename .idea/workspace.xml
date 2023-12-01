@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="more testing">
+    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="unit testing for sprint 4's features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/brokerAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerAdmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/brokerBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/brokerBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/searchBroker.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchBroker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/searchProperty.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/searchProperty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/systemAdminBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/systemAdminBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/rejectAcceptOffer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/rejectAcceptOffer.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/searchBroker.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/searchBroker.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/searchProperty.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sendOfferRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/sendOfferRequest.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/sendNotificationEmail.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sendNotificationEmail.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testSetup.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testSetup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/viewOfferRequests.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/viewOfferRequests.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +123,7 @@
       <workItem from="1701130030864" duration="4812000" />
       <workItem from="1701296713880" duration="258000" />
       <workItem from="1701362815588" duration="2307000" />
-      <workItem from="1701396680645" duration="1663000" />
+      <workItem from="1701396680645" duration="2852000" />
     </task>
     <task id="LOCAL-00001" summary="Trial website">
       <created>1698958569289</created>
@@ -236,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701186264861</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="unit testing for sprint 4's features">
+      <created>1701398644822</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701398644822</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +277,7 @@
     <MESSAGE value="." />
     <MESSAGE value="Merged the mortgage calculator feature version, with the Broker Admin's features" />
     <MESSAGE value="more testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="more testing" />
+    <MESSAGE value="unit testing for sprint 4's features" />
+    <option name="LAST_COMMIT_MESSAGE" value="unit testing for sprint 4's features" />
   </component>
 </project>

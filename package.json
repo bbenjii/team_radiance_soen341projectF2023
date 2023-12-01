@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest && standard && node my-tests.js"
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "supertest": "^6.3.3"
+    "supertest": "^6.3.3",
+    "standard": "*"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
