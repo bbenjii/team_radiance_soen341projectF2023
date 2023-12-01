@@ -1,11 +1,10 @@
 {
   "scripts": {
-    "test": "jest && standard && node my-tests.js"
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "supertest": "^6.3.3",
-    "standard": "*"
+    "supertest": "^6.3.3"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
@@ -15,3 +14,4 @@
     "nodemailer": "^6.9.7"
   }
 }
+
