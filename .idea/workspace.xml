@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="Merged the mortgage calculator feature version, with the Broker Admin's features">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-10__11_49_a_m___Changes_.xml" beforeDir="false" />
+    <list default="true" id="1e526399-0474-459f-a786-3b53f7d4bcb1" name="Changes" comment="more testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/rejectAcceptOffer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/rejectAcceptOffer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/searchBroker.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/searchBroker.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/searchProperty.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sendOfferRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/sendOfferRequest.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/viewOfferRequests.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/viewOfferRequests.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="backend_sp4_loginLogic_attempts" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,7 +112,10 @@
       <workItem from="1699254382907" duration="624000" />
       <workItem from="1699472282665" duration="12220000" />
       <workItem from="1699834412776" duration="18953000" />
-      <workItem from="1701130030864" duration="2886000" />
+      <workItem from="1701130030864" duration="4812000" />
+      <workItem from="1701296713880" duration="258000" />
+      <workItem from="1701362815588" duration="2307000" />
+      <workItem from="1701396680645" duration="1663000" />
     </task>
     <task id="LOCAL-00001" summary="Trial website">
       <created>1698958569289</created>
@@ -215,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701060270535</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="more testing">
+      <created>1701186232956</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701186232956</updated>
+    </task>
+    <task id="LOCAL-00017" summary="more testing">
+      <created>1701186264861</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701186264861</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +261,7 @@
     <MESSAGE value="Setting up Unit Tests for sending visit requests vist and offer emails" />
     <MESSAGE value="." />
     <MESSAGE value="Merged the mortgage calculator feature version, with the Broker Admin's features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged the mortgage calculator feature version, with the Broker Admin's features" />
+    <MESSAGE value="more testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="more testing" />
   </component>
 </project>

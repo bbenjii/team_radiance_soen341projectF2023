@@ -2,12 +2,10 @@ const request = require('supertest');
 const createApp = require('../backend/app');
 const { createTestConnection, closeConnection, mockedTransport } = require('./testSetup');
 
-
 describe('GET /searchBroker', () => {
 
     let app;
     let connection;
-
     beforeAll(async () => {
         connection = await createTestConnection();
         app = createApp(connection, mockedTransport);
@@ -16,7 +14,6 @@ describe('GET /searchBroker', () => {
     afterAll(async () => {
         await closeConnection(connection);
     });
-
 
     it('should return results for a valid single parameter search', async () => {
         const response = await request(app)
